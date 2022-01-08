@@ -1,11 +1,25 @@
 ul.nav{
-   background-color: aqua;
-   padding-top: 1%;
+ list-style-type: none;
+ margin: 0%;
+ padding: 0%;
+ overflow: hidden;
+ background-color: darkcyan;
+ font-size: 100%;
 }
 ul.nav li{
-    display: inline-block;
-    margin: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
+    float: left;
+    margin: 2%;
+    padding-bottom: 0%;
+}
+ul.nav li a{
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding-left: 2%;
+    text-decoration: none;
+
+}
+ul.nav li a:hover{
+    background-color:tomato;
     
 }
