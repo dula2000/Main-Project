@@ -1,0 +1,11 @@
+ul.nav{
+   background-color: aqua;
+   padding-top: 1%;
+}
+ul.nav li{
+    display: inline-block;
+    margin: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+}
