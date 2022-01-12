@@ -51,3 +51,30 @@
 .c .box:hover .icon .fa{
     font-size: 80px;
 }
+.c .box .content{
+    position: absolute;
+    top: 100%;
+    height: calc(100% - 100px);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    opacity: 0;
+}
+.c .box:hover .content{
+    top: 100px;
+    opacity: 1;
+}
+/*adding styles to the box header */
+.c .box .content h3{    
+    margin: 0;
+    padding: 0;
+    color: cyan;
+    font-size: 24px;
+}
+.c .box .content h3{    
+    margin: 0;
+    padding: 0;
+    color: cyan;
+    font-size: 24px;
+}
