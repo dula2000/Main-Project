@@ -1,0 +1,83 @@
+body{
+    background: rgb(222, 238, 233);
+}
+.slider{
+    margin:0;
+    box-sizing: border-box;
+    background: rgb(181, 186, 187);
+}
+.topic{
+    text-align: center;
+    color: rgb(14, 13, 13);
+    font-family: sans-serif ;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+
+}
+.wrapper{
+    width: 100%;
+}
+
+.container{
+    height:500px;
+    align-items: center;
+}
+.slide-image{
+    height: 100%;
+    position:absolute;
+
+  
+}
+.slide-image img
+{
+    width: 100%;
+    height: 80%;
+    object-fit:cover;
+}
+.prevbtn,.nextbtn{
+    background: grey;
+    padding: 16px;
+    position: absolute;
+    top:45%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgb(0,0,0.6);
+    z-index: 100;
+    cursor: pointer;
+    transition: 400ms;
+
+
+}
+.prevbtn:hover,.nextbtn:hover
+{
+    background-color: silver;
+}
+.prevbtn
+{
+    left: 0;
+}
+.nextbtn
+{
+    right:0;
+}
+.navigation-dots{
+    display:flex;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0;
+}
+.single-dot{
+    background: rgb(238, 232, 232);
+    height: 16px;
+    width: 16px;
+    border: 2px solid rgb(141, 141, 141);
+    border-radius: 50%;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: 400ms;
+}
+.single-dot.active
+{
+    background: rgb(7, 7, 7);
+}
