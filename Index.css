@@ -6,36 +6,58 @@
 }
 body
 {
-    background-image: url(file:///C:/Users/HP/Downloads/background.jpg.jpg);
+    font-family: sans-serif;
+    background-image: url(file:///C:/Users/HP/Downloads/bg2.jpg);
     background-size: cover;
     background-position: center;
-    font-family: sans-serif;
 }
+
 .Menu-bar
 {
-    background: rgb(0,100,0);
+    width: 100%;
+    height: 80px;
+    margin: auto;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.logo
+{
+    width: 200px;
+    float: left;
+    height: 70px;
+    color: rgb(0,100,0);
+    font-family: Arial;
+    font-size: 40px;
+    padding-left: 20px;
+    padding-top: 10px;
+    float: left;
 }
 .Menu-bar ul
 {
     display: inline-flex;
     list-style: none;
-    color: white;
+    color: black;
 }
 .Menu-bar ul li
 {
     width: 120px;
     margin: 8px;
     padding: 8px;
+    float: left;
+    font-size: 14px;
+    position: relative;
 }
 .Menu-bar ul li a
 {
     text-decoration: none;
-    color: white;
+    color: black;
+    font-weight: bold;
 }
-.active, .Menu-bar ul li:hover
+.Menu-bar ul li a:hover
 {
-    background: #2bab0d;
+    color: #2bab0d;
     border-radius: 3px;
 }
 .Menu-bar .fa
@@ -45,27 +67,26 @@ body
 .sub-menu-1
 {
     display: none;
-
+    
 }
 .Menu-bar ul li:hover .sub-menu-1
 {
     display: block;
     position: absolute;
-    background: rgb(0,100,0);
-    margin-top: 15px;
+    margin-top: 5px;
     margin-left: -15px;
 }
 .Menu-bar ul li:hover .sub-menu-1 ul
 {
     display: block;
-    margin: 10px;
+    margin: 8px;
 
 }
 .Menu-bar ul li:hover .sub-menu-1 li
 {
     width: 150px;
     padding: 10px;
-    border-bottom: 1px dotted white;
+    border-bottom: 1px dotted black;
     background: transparent;
     border-radius: 0;
     text-align: left;
@@ -76,7 +97,7 @@ body
 }
 .Menu-bar ul li:hover .sub-menu-1 ul li a:hover
 {
-    color: #b2ff00;
+    color: #2bab0d;
 }
 .fa-angle-right
 {
@@ -90,7 +111,101 @@ body
 {
     position: absolute;
     display: block;
-    margin-top: -40px;
+    margin-top: -50px;
     margin-left: 140px;
-    background-color: rgb(0,100,0);
+}
+.search
+{
+    width: 250px;
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.srch
+{
+    font-family: 'Times New Roman';
+    width: 150px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid black;
+    margin-top: 13px;
+    color: black;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.btn
+{
+    width: 100px;
+    height: 40px;
+    background: rgb(0,100,0);
+    border: 2px solid rgb(0,100,0);
+    margin-top: 13px;
+    color: white;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.btn :focus
+{
+    outline: none;
+}
+.srch:focus
+{
+    outline: none;
+}
+.content
+{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: black;
+    position: relative;
+}
+.content .par
+{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+.content h1
+{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+.content .cn
+{
+    width: 160px;
+    height: 40px;
+    background: #2bab0d;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.content .cn a
+{
+    text-decoration: none;
+    color: black;
+    transition: .3s ease;
+}
+.cn:hover
+{
+    background: yellowgreen;
+}
+.content span
+{
+    color: rgb(0,100,0);
+    font-size: 60px;
 }
