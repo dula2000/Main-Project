@@ -110,7 +110,7 @@ section{
 
 /*box css parts*/
 .c{
-    position: relative;
+    position:relative;
     width: 1200px;  /* if need, please change this px to the %  */
     height: 200px;
     margin: 140px auto;
