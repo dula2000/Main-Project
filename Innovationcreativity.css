@@ -131,11 +131,24 @@ section{
 .pic1{
     opacity: 0;
     position: absolute;
-    left: 70%;
-    top: 6.5%;
+    left: 60%;
+    top: 5%;
     transform: translateY(-50%);
     animation: fadeIn 1s linear forwards;
     animation-delay: 5s;
+    height: 40%;
+    width: 30%;
+}
+.pic2{
+    opacity: 0;
+    position: absolute;
+    left: 60%;
+    top: 100%;
+    transform: translateY(-50%);
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 5s;
+    height: 50%;
+    width: 30%;
 }
 
 
@@ -216,6 +229,9 @@ section{
     padding: 0;
     color: cyan;
     font-size: 24px;
+}
+.span1{
+    color: rgb(14, 158, 110);
 }
 
 
