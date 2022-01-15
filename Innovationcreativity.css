@@ -143,7 +143,7 @@ section{
 }
 .c .box{
     position: relative;
-    top: 240%;
+    top: 240%;  /*change the box top position*/
     width: calc(400px - 30px);     /* if need, please change this px to the %  */
     height: calc(300px - 30px);
     background: rgb(177, 177, 51); /*color of the box background*/
