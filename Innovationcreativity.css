@@ -233,8 +233,157 @@ section{
 .span1{
     color: rgb(14, 158, 110);
 }
+/*creaing the navigation bar*/
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: sans-serif;
+    background-size: cover;
+    background-position: center;
+}
+.header
+{    
+     top: 0%;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(file:///C:/Users/HP/Downloads/bg3.jpg);
+    background-size: cover;
+}
+.Menu-bar
+{
+    width: 100%;
+    height: 80px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.logo
+{
+    top:0%;
+        width: 200px;
+    float: left;
+    height: 70px;
+    color: rgb(0,100,0);
+    font-family: 'Times New Roman';
+    font-size: 40px;
+    padding-left: 20px;
+    padding-top: 10px;
+    float: left;
+}
+.Menu-bar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: black;
+}
+.Menu-bar ul li
+{
+    width: 120px;
+    margin: 8px;
+    padding: 8px;
+    float: left;
+    font-size: 14px;
+    position: relative;
+}
+.Menu-bar ul li a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.Menu-bar ul li a:hover
+{
+    color: #2bab0d;
+    border-radius: 3px;
+}
+.Menu-bar .fa
+{
+    margin-right: 8px;
+}
+.sub-menu-1
+{
+    display: none;
+    
+}
+.Menu-bar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: -15px;
+}
+.Menu-bar ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 8px;
 
-
+}
+.Menu-bar ul li:hover .sub-menu-1 li
+{
+    width: 150px;
+    padding: 1.5px;
+    background: transparent;
+    border-bottom: 1px dotted black;
+    border-radius: 0;
+    text-align: left;
+}
+.Menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+}
+.Menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+    color: #2bab0d;
+}
+.search
+{
+    width: 250px;
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.srch
+{
+    font-family: 'Times New Roman';
+    width: 150px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid black;
+    margin-top: 13px;
+    color: black;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.btn
+{
+    width: 100px;
+    height: 40px;
+    background: rgb(0,100,0);
+    border: 2px solid rgb(0,100,0);
+    margin-top: 13px;
+    color: white;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.btn :focus
+{
+    outline: none;
+}
+.srch:focus
+{
+    outline: none;
+}
 
 
 
