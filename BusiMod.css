@@ -17,10 +17,12 @@ body{
 }
 .wrapper{
     width: 100%;
+    overflow: hidden;
 }
 
 .container{
     height:500px;
+    transition: 900ms cubic-bezier(0.48, 0.15, 0.18, 1);
     align-items: center;
 }
 .slide-image{
