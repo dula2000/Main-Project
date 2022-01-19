@@ -1,11 +1,11 @@
 *
-{
+{   
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 body
-{
+{   top: 0;
     font-family: sans-serif;
     background-size: cover;
     background-position: center;
@@ -26,6 +26,7 @@ body
     text-align: center;
     display: flex;
     justify-content: space-between;
+    top: 0%;
     
 }
 .logo
@@ -151,6 +152,7 @@ body
 }
 /*adding quotes styles*/
 .william .quote{
+    top: 10%;
     margin-top: 10%;
     padding-left: 20px;
     font-family: 25px;
@@ -161,4 +163,156 @@ body
     padding-top: 25px ;
     text-align: center;
     
+}
+
+/*page opening animation's css part*/
+.open{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom:0 ;
+    pointer-events: none;
+    z-index: 10000;
+}
+
+.open .layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: top;
+    animation: open 1s ease-in-out forwards;
+
+}
+.open .layer:nth-child(1){
+    background: #000;
+    z-index: 2;
+}
+.open .layer:nth-child(2){
+    background: #4c0f68;
+    animation-delay: 1s;
+    z-index: 1;
+}
+@keyframes open{
+    0%{
+        transform: scaleY(1);
+    }
+    100%{
+        transform: scaleY(0);
+    }
+}
+section{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    top: 90%;
+}
+.bannerText{
+    position: absolute;
+    top: 120%;       /*change the space of the whole text*/
+    left: 10%;
+    transform: translateY(-50%);
+    max-width: 700px;
+    
+}
+
+.bannerText h2,
+.bannerText h3{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    
+    display:inline-block;
+    transform-origin: left;
+    text-transform: uppercase;
+    transform: scaleX(0);
+    animation: revealTextReverse 1s ease-in-out forwards;
+
+}
+.bannerText h2{
+    font-size: 6em;
+    animation-delay: 2s;
+    top: 50%;
+}
+.bannerText h3{
+    font-size: 3em;
+    animation-delay: 2s;
+    
+}
+.bannerText h2::before,
+.bannerText h3::before{
+    content: '';
+    position: absolute;
+    top:0%;
+    left: 0;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    transform-origin: right;
+    animation: revealText 1s ease-in-out forwards;
+    animation-delay: 3s;
+}
+.bannerText h3:before{
+    animation-delay: 4s;
+}
+@keyframes revealText{
+    0%{
+        transform: scaleX(1);
+    }
+    100%{
+        transform: scaleX(0);
+    }
+}
+@keyframes revealTextReverse
+{
+    0%{
+        transform: scaleX(0);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}
+.bannerText p{
+    opacity: 0;
+    font-weight: 400;
+    font-size: 1.2em;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 4s;
+    margin-bottom: 20%; /*keep spacing between the two pragraphs*/
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.pic1{
+    opacity: 0;
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 5s;
+    height: 40%;
+    width: 30%;
+}
+.pic2{
+    opacity: 0;
+    position: absolute;
+    left: 60%;
+    top: 130%;
+    transform: translateY(-50%);
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 5s;
+    height: 50%;
+    width: 30%;
 }
