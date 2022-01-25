@@ -4,8 +4,9 @@ body{
 .slider{
     margin:0;
     box-sizing: border-box;
-    background: rgb(181, 186, 187);
+    background: rgb(98, 180, 149);
     align-items: center;
+    width: 100%;
 }
 .topic{
     text-align: center;
@@ -24,6 +25,7 @@ body{
     height:500px;
     transition: 900ms cubic-bezier(0.48, 0.15, 0.18, 1);
     align-items: center;
+    width: 100%;
 }
 .slide-image{
     height: 100%;
@@ -84,4 +86,31 @@ body{
 .single-dot.active
 {
     background: rgb(7, 7, 7);
+}
+.Basic
+{
+    width: 100%;
+    border: 2px solid rgb(236, 243, 236);
+    padding: 2px;
+    margin: 1px;
+    height: 500px;
+    position:relative;
+}
+.thinkBox
+{
+    width: 49%;
+    border-radius: 20px ;
+    margin: 5px;
+    float: left;
+    height: 50%;
+    position:relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: rgb(98, 180, 149);
+    box-shadow: 5px 5px 5px cornsilk;
+    transition: width 2s;
+}
+thinkBox:hover
+{
+    width: 300px;
 }
