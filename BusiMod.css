@@ -110,7 +110,25 @@ body{
     box-shadow: 5px 5px 5px cornsilk;
     transition: width 2s;
 }
+.BasicTopic
+{
+    text-align: center;
+}
 thinkBox:hover
 {
     width: 300px;
+}
+.CR{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    height: 50px;
+    width: 50px;
+    padding-top: 10px;
+
+}
+.EXP
+{
+    text-align: center;
+   
 }
