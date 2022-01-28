@@ -154,8 +154,8 @@ body
 }
 /*adding quotes styles*/
 .william .quote{
-    top: 10%;
-    margin-top: 10%;
+    top: 5%;
+    margin-top: 5%;  /*space between the quote and topic*/
     padding-left: 20px;
     font-family: 25px;
     letter-spacing: 1.2px;
@@ -165,6 +165,17 @@ body
     padding-top: 25px ;
     text-align: center;
     
+}
+.william {
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: black;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    margin-bottom: 10px;
+
 }
 
 /*page opening animation's css part*/
