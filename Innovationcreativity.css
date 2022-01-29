@@ -236,6 +236,28 @@ section{
 .span2{
     text-align: center;
 }
+
+/*adding styles to the box button*/
+.c .box .content .bb{
+    width: 140px;
+    height: 30px;
+    background: #2bab0d;
+    border: none;
+    margin-bottom: 100px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.c .box .content .bb a{
+    text-decoration: none;
+    color: black;
+    transition: .3s ease;
+}
+.c .box .content .bb:hover{
+    background: yellowgreen;
+}
 /*creaing the navigation bar*/
 *
 {

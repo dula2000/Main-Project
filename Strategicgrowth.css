@@ -339,10 +339,11 @@ section{
     height: 200px;
     margin: 140px auto;
     padding: 0%;
+    
 }
 .c .box{
     position: relative;
-    top: 950%;  /*change the box top position*/
+    top: 940%;  /*change the box top position*/
     width: calc(400px - 30px);     /* if need, please change this px to the %  */
     height: calc(300px - 30px);
     background: rgb(177, 177, 51); /*color of the box background*/
@@ -351,6 +352,7 @@ section{
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 10px;
+    
 }
 .c .box .icon{
     position: absolute;
@@ -414,6 +416,27 @@ section{
 }
 .span2{
     text-align: center;
+}
+/*adding styles to the box button*/
+.c .box .content .bb{
+    width: 160px;
+    height: 40px;
+    background: #2bab0d;
+    border: none;
+    margin-bottom: 100px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.c .box .content .bb a{
+    text-decoration: none;
+    color: black;
+    transition: .3s ease;
+}
+.c .box .content .bb:hover{
+    background: yellowgreen;
 }
 
 /*landing page button*/
