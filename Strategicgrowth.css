@@ -173,7 +173,7 @@ body
     color: black;
     position: relative;
     text-align: center;
-    top: 50%;
+    top: 40%;
     margin-bottom: 10px;
 
 }
@@ -414,4 +414,31 @@ section{
 }
 .span2{
     text-align: center;
+}
+
+/*landing page button*/
+
+
+.william .cn
+{
+    width: 160px;
+    height: 40px;
+    background: #2bab0d;
+    border: none;
+    margin-bottom: 100px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.william .cn a
+{
+    text-decoration: none;
+    color: black;
+    transition: .3s ease;
+}
+.cn:hover
+{
+    background: yellowgreen;
 }
