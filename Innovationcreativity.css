@@ -166,7 +166,7 @@ section{
     top: 1000%;  /*change the box top position*/
     width: calc(400px - 30px);     /* if need, please change this px to the %  */
     height: calc(300px - 30px);
-    background: rgb(177, 177, 51); /*color of the box background*/
+    background: rgb(240, 240, 233); /*color of the box background*/
     float: left;
     margin: 15px;
     box-sizing: border-box;
