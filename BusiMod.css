@@ -91,7 +91,7 @@ body{
 {
     width: 100%;
     border: 2px solid rgb(236, 243, 236);
-    padding: 2px;
+    padding-top:10%;
     margin: 1px;
     height: 500px;
     position:relative;
@@ -124,7 +124,7 @@ thinkBox:hover
   margin-right: auto;
     height: 50px;
     width: 50px;
-    padding-top: 10px;
+    padding-top: 30px;
 
 }
 .EXP
@@ -132,3 +132,78 @@ thinkBox:hover
     text-align: center;
    
 }
+.q{
+    text-align: center;
+    margin:10px;
+}
+.course{
+    width: 100%;
+    height: 300px;
+    position:relative;
+    padding-top: 25%;
+    margin: 2%;
+    padding-bottom: 25%;
+    
+}
+.courseDescription{
+    width: 40%;
+    margin: 5%;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    
+
+}
+.Cpara
+{
+    text-align: center;
+    position: relative;
+    margin: 15px;
+    font-style:initial;
+    padding-top: 5%;
+}
+.a{
+    text-align:center;
+    position: relative;
+    font-size: 300%;
+}
+.btnCourses
+{
+
+    height: 15%;
+    width: 25%;
+    background-color:#d62038;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    position:relative;
+    top: 60%;
+    left: 37%;
+    border-radius:50% ;
+    border-color:#d62038;
+}
+.btnCourses span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .btnCourses span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .btnCourses:hover span {
+    padding-right: 25px;
+  }
+  
+  .btnCourses:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
