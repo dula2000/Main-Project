@@ -16,7 +16,7 @@ body
      top: 0%;
     min-height: 110vh;
     width: 100%;
-    background-image:linear-gradient(rgba(170, 235, 178, 0.7),rgba(171, 240, 186, 0.7)),url(file:///C:/Users/HP/Downloads/r1.jpg);
+   
     background-size: cover;
     background-position: center;
 }
