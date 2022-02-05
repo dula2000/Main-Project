@@ -12,11 +12,13 @@ body
 }
 .header
 {    
+     /*option of the landing background*/
      top: 0%;
-    min-height: 100vh;
+    min-height: 110vh;
     width: 100%;
-    background-image: url(file:///C:/Users/HP/Downloads/bg3.jpg);
+    background-image:linear-gradient(rgba(170, 235, 178, 0.7),rgba(171, 240, 186, 0.7)),url(file:///C:/Users/HP/Downloads/r1.jpg);
     background-size: cover;
+    background-position: center;
 }
 .Menu-bar
 {
@@ -152,8 +154,8 @@ body
 }
 /*adding quotes styles*/
 .william .quote{
-    top: 10%;
-    margin-top: 10%;
+    top: 5%;
+    margin-top: 5%;  /*space between the quote and topic*/
     padding-left: 20px;
     font-family: 25px;
     letter-spacing: 1.2px;
@@ -163,6 +165,17 @@ body
     padding-top: 25px ;
     text-align: center;
     
+}
+.william {
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: black;
+    position: relative;
+    text-align: center;
+    top: 40%;
+    margin-bottom: 10px;
+
 }
 
 /*page opening animation's css part*/
@@ -215,7 +228,7 @@ section{
 }
 .bannerText{
     position: absolute;
-    top: 120%;       /*change the space of the whole text*/
+    top: 105%;       /*change the space of the whole text*/
     left: 10%;
     transform: translateY(-50%);
     max-width: 700px;
@@ -298,7 +311,7 @@ section{
     opacity: 0;
     position: absolute;
     left: 60%;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
     animation: fadeIn 1s linear forwards;
     animation-delay: 5s;
@@ -309,11 +322,11 @@ section{
     opacity: 0;
     position: absolute;
     left: 60%;
-    top: 130%;
+    top: 100%;
     transform: translateY(-50%);
     animation: fadeIn 1s linear forwards;
     animation-delay: 5s;
-    height: 50%;
+    height: 40%;
     width: 30%;
 }
 
@@ -326,10 +339,11 @@ section{
     height: 200px;
     margin: 140px auto;
     padding: 0%;
+    
 }
 .c .box{
     position: relative;
-    top: 950%;  /*change the box top position*/
+    top: 940%;  /*change the box top position*/
     width: calc(400px - 30px);     /* if need, please change this px to the %  */
     height: calc(300px - 30px);
     background: rgb(177, 177, 51); /*color of the box background*/
@@ -338,6 +352,7 @@ section{
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 10px;
+    
 }
 .c .box .icon{
     position: absolute;
@@ -402,3 +417,84 @@ section{
 .span2{
     text-align: center;
 }
+/*adding styles to the box button*/
+.c .box .content .bb{
+    width: 160px;
+    height: 40px;
+    background: #2bab0d;
+    border: none;
+    margin-bottom: 100px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.c .box .content .bb a{
+    text-decoration: none;
+    color: black;
+    transition: .3s ease;
+}
+.c .box .content .bb:hover{
+    background: yellowgreen;
+}
+
+/*landing page button*/
+
+
+.william .cn
+{
+    width: 160px;
+    height: 40px;
+    background: #2bab0d;
+    border: none;
+    margin-bottom: 100px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.william .cn a
+{
+    text-decoration: none;
+    color: black;
+    transition: .3s ease;
+}
+.cn:hover
+{
+    background: yellowgreen;
+}
+
+ /*----footer-----*/
+ .footer
+ {  top: 2800px; /*Change the footer position*/
+     width: 100%;
+     text-align: center;
+     padding: 30px 0;
+ }
+ .footer p
+ {
+     color: black;
+     font-size: 14px;
+     font-weight: 300;
+     line-height: 22px;
+     padding: 10px;
+ }
+ .footer h4
+ {
+     margin-bottom: 25px;
+     margin-top: 20px;
+     font-weight: 600;
+ }
+ .icons .fab
+ {
+     color: rgb(0, 100, 0);
+     margin: 0 13px;
+     cursor: pointer;padding: 18px 0;
+ }
+ .far fa-heart
+ {
+     color: rgb(0, 100, 0);
+ }
+ 
