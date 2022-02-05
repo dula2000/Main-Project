@@ -3,10 +3,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 body
 {
-    font-family: sans-serif;
     background-size: cover;
     background-position: center;
 }
@@ -14,13 +14,14 @@ body
 {
     min-height: 100vh;
     width: 100%;
-    background-image: url(file:///C:/Users/HP/Downloads/bg3.jpg);
+    background-image:linear-gradient(rgba(170, 235, 178, 0.7),rgba(171, 240, 186, 0.7)),url(file:///C:/Users/HP/Downloads/r1.jpg);
     background-size: cover;
+    background-position: center;
 }
 .Menu-bar
 {
     width: 100%;
-    height: 80px;
+    height: 60px;
     margin: auto;
     text-align: center;
     display: flex;
@@ -32,77 +33,96 @@ body
     width: 200px;
     float: left;
     height: 70px;
-    color: rgb(0,100,0);
+    padding: 2% 2%;
+    color: rgb(0, 100, 0);
     font-family: 'Times New Roman';
     font-size: 40px;
-    padding-left: 20px;
-    padding-top: 10px;
     float: left;
 }
-.Menu-bar ul
+.nav-links
+{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul
 {
     display: inline-flex;
     list-style: none;
     color: black;
 }
-.Menu-bar ul li
+.nav-links ul li
 {
-    width: 120px;
-    margin: 8px;
-    padding: 8px;
-    float: left;
-    font-size: 14px;
+    width: 110px;
+    margin: 5px;
+    font-size: 13px;
+    list-style: none;
+    display: inline-block;
+    padding: 8px 10px;
     position: relative;
 }
-.Menu-bar ul li a
+.nav-links ul li a
 {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    font-size: 13px;
+}
+.nav-links ul li::after
+{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(60, 134, 64);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after
+{
+    width: 100%;
+
 }
 .Menu-bar ul li a:hover
 {
     color: #2bab0d;
     border-radius: 3px;
 }
-.Menu-bar .fa
+.Menu-bar .fas
 {
-    margin-right: 8px;
+    margin-right: 5px;
 }
 .sub-menu-1
 {
     display: none;
     
 }
-.Menu-bar ul li:hover .sub-menu-1
+.nav-links ul li:hover .sub-menu-1
 {
     display: block;
     position: absolute;
     margin-top: 5px;
     margin-left: -15px;
 }
-.Menu-bar ul li:hover .sub-menu-1 ul
+.nav-links ul li:hover .sub-menu-1 ul
 {
     display: block;
     margin: 8px;
-
 }
-.Menu-bar ul li:hover .sub-menu-1 li
+.nav-links ul li:hover .sub-menu-1 li
 {
     width: 150px;
     padding: 1.5px;
     background: transparent;
-    border-bottom: 1px dotted black;
     border-radius: 0;
     text-align: left;
 }
-.Menu-bar ul li:hover .sub-menu-1 ul li:last-child
+.nav-links ul li:hover .sub-menu-1 ul li:last-child
 {
     border-bottom: none;
 }
-.Menu-bar ul li:hover .sub-menu-1 ul li a:hover
+.nav-links ul li:hover .sub-menu-1 ul li a:hover
 {
-    color: #2bab0d;
+    color: rgb(60, 134, 64);
 }
 .search
 {
@@ -116,7 +136,7 @@ body
     font-family: 'Times New Roman';
     width: 150px;
     height: 40px;
-    background: transparent;
+    background: white;
     border: 1px solid black;
     margin-top: 13px;
     color: black;
@@ -160,6 +180,7 @@ body
 {
     padding-left: 20px;
     padding-bottom: 25px;
+    margin: 10px 0 40px;
     font-family: Arial;
     letter-spacing: 1.2px;
     line-height: 30px;
@@ -169,7 +190,7 @@ body
     font-family: 'Times New Roman';
     font-size: 50px;
     padding-left: 20px;
-    margin-top: 13%;
+    margin-top: 14%;
     letter-spacing: 2px;
 }
 .content .cn
@@ -200,25 +221,43 @@ body
     color: rgb(0,100,0);
     font-size: 60px;
 }
-
+.Menu-bar .tag
+{
+    display: none;
+}
 @media(max-width: 700px)
 {
     .content h1{
         font-size: 20px;
     }
-    .Menu-bar ul li{
+    .nav-links ul li{
         display: block;
     }
-    .Menu-bar{
+    .nav-links{
         position: absolute;
         background: rgb(0,100,0);
+        color: white;
         height: 100vh;
         width: 200px;
         top: 0;
-        right: 0;
+        right: -200px;
         text-align: left;
-        z-index: 2;
+        z-index: 6;
+        transition: 1s;
     }
+    .Menu-bar .tag
+    {
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul 
+    {
+        padding: 20px;
+    }
+    
 }
 /*---Academy intro---*/
     .Academy
@@ -240,4 +279,380 @@ body
         font-weight: 300;
         line-height: 22px;
         padding: 10px;
+    }
+    .row
+    {
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .academy-col
+    {
+        flex-basis: 24%;
+        background: #d9fad2;
+        border-radius: 10px;
+        margin-bottom: 5%;
+        padding: 20px 12px;
+        box-sizing: border-box; 
+        transition: 0.5s;  
+    }
+    .row h3
+    {
+        text-align: center;
+        font-weight: 600;
+        margin: 10px 0;
+    }
+    .academy-col:hover
+    {
+        box-shadow: 0 0 20px 0px rgb(0, 100, 0);
+    }
+    @media(max-width: 700px)
+    {
+        .row
+        {
+            flex-direction: column;
+        }
+    }
+    /*---Institute intro---*/
+    .institute
+    {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 50px;
+    }
+    .institute h1
+    {
+        font-size: 36px;
+        font-weight: 600;
+    }
+    .institute p
+    {
+        color: black;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        padding: 10px;
+    }
+    .institute-col
+    {
+        flex-basis: 32%;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        position: relative;
+        overflow: hidden;
+    }
+    .institute-col img
+    {
+        width: 100%;
+        display: block;
+    }
+    .layer
+    {
+        background: transparent;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.5s;
+    }
+    .layer:hover
+    {
+        background: rgb(220, 253, 220);
+    }
+    .layer h3
+    {
+        width: 100px;
+        font-weight: 500;
+        color: rgb(0, 100, 0);
+        font-size: 26px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    .layer:hover h3
+    {
+        font-weight: bold;
+        bottom: 49%;
+        opacity: 1;
+    }
+    /*-----About new innovations-----*/
+    .newinno
+    {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 100px;
+    }
+    .newinno h1
+    {
+        font-size: 36px;
+        font-weight: 600;
+    }
+    .newinno p
+    {
+        color: black;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        padding: 10px;
+    }
+    .inno-col
+    {
+        flex-basis: 31%;
+        border-radius: 10px;
+        margin-bottom: 5%;
+        text-align: left;
+    }
+    .inno-col img
+    {
+        width: 100%;
+        border-radius: 10px;
+    }
+    .inno-col p
+    {
+        padding: 0;
+    }
+    .inno-col h3
+    {
+        margin-top: 16px;
+        margin-bottom: 15px;
+        text-align: left;
+    }
+    /*----News bar----*/
+    .news
+    {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 150px;
+    }
+    .news h1
+    {
+        font-size: 36px;
+        font-weight: 600;
+    }
+    .news p
+    {
+        color: black;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        padding: 10px;
+    }
+    .news-col
+    {
+        flex-basis: 31%;
+        background: #d9fad2;
+        border-radius: 10px;
+        margin-bottom: 5%;
+        padding: 20px 12px;
+        box-sizing: border-box; 
+        transition: 0.5s;  
+    }
+    .news-col:hover
+    {
+        box-shadow: 0 0 20px 0px rgb(0, 100, 0); 
+    }
+    .news-col p
+    {
+        padding: 0;
+    }
+    .feedback
+    {
+        width: 80%;
+        margin: auto;
+        padding-top: 100px;
+        text-align: center;
+    }
+    .feedback h1
+    {
+        font-size: 36px;
+        font-weight: 600;
+    }
+    .feedback p
+    {
+        color: black;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        padding: 10px;
+    }
+    .feedback-col
+    {
+        flex-basis: 48%;
+        border-radius: 10px;
+        margin-bottom: 5%;
+        text-align: left;
+        background: rgb(217, 248, 217);
+        padding: 25px;
+        cursor: pointer;
+        display: flex;
+    }
+    .feedback-col img
+    {
+        height: 40px;
+        margin-left: 5px;
+        margin-right: 30px;
+        border-radius: 50%;
+    }
+    .feedback-col p
+    {
+        padding: 0;
+    }
+    .feedback-col h3
+    {
+        margin-top: 15px;
+        text-align: left;
+    }
+    .feedback-col .fas
+    {
+        color: rgb(0, 100, 0);
+    }
+    @media(max-width: 700px)
+    {
+        .feedback-col img
+        {
+            margin-left: 0px;
+            margin-right: 15px;
+        }
+    }
+
+    /*---Call to action section---*/
+    .call
+    {
+        margin: 100px auto;
+        width: 80%;
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(file:///C:/Users/HP/Downloads/office2.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+        text-align: center;
+        padding: 100px 0;
+    }
+    .call h1
+    {
+        font-size: 36px;
+        font-weight: 600;
+        color: white;
+        margin-bottom: 40px;
+        padding: 0;
+    }
+    .hero-btn
+    {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        border: 1px solid white;
+        padding: 12px 34px;
+        font-size: 13px;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+    }
+    .hero-btn:hover
+    {
+        border: 1px solid #2bab0d;
+        background: #2bab0d;
+        transition: 1s;
+    }
+    @media(max-width: 700px)
+    {
+        .cta h1
+        {
+            font-size: 24px;
+        }
+    }
+
+    /*----footer-----*/
+    .footer
+    {
+        width: 100%;
+        text-align: center;
+        padding: 30px 0;
+    }
+    .footer p
+    {
+        color: black;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        padding: 10px;
+    }
+    .footer h4
+    {
+        margin-bottom: 25px;
+        margin-top: 20px;
+        font-weight: 600;
+    }
+    .icons .fab
+    {
+        color: rgb(0, 100, 0);
+        margin: 0 13px;
+        cursor: pointer;padding: 18px 0;
+    }
+    .far fa-heart
+    {
+        color: rgb(0, 100, 0);
+    }
+    
+
+    /*-------About us page---------*/
+    .sub-header
+    {
+        height: 50vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(170, 235, 178, 0.7),rgba(171, 240, 186, 0.7)),url(file:///C:/Users/HP/Downloads/bgi2.jpg);
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        color: black;
+    }
+    .sub-header h1
+    {
+        margin-top: 100px;
+    }
+    .about
+    {
+        width: 80%;
+        margin: auto;
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+    .about-col
+    {
+        flex-basis: 48%;
+        padding: 30px 2px;
+    }
+    .about-col img
+    {
+        width: 100%;
+    }
+    .about-col h1
+    {
+        font-size: 36px;
+        font-weight: 600;
+        padding-top: 0;
+    }
+    .about-col p
+    {
+        padding: 15px 0 25px;
+        color: black;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+    }
+    .green-btn
+    {
+        border: 1px solid rgb(0, 100, 0);
+        background: transparent;
+        color: rgb(0, 100, 0);
+    }
+    .green-btn:hover
+    {
+        color: white;
     }

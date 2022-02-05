@@ -1,50 +1,42 @@
-const slideImage = document.querySelectorAll(".slide-image");
-const slidesContainer = document.querySelector(".container");
-const nextBtn = document.querySelector(" .nextbtn");
-const prevbtn = document.querySelector(".prevbtn");
-const navigationDots = document.querySelector(".navigation-dots");
+var slideIndex=1;
+showSlides(slideIndex);
 
-let numberofImages = slideImage.length;
-let slidewidth = slideImage[0].clientWidth;
-// setting up the slider.
-
-function init()
-{
-   /*
-   positioning of images.
-   slideImage[0] = 0
-   slideImage[1] = 100%
-   slideImage[2] = 200%
-   slideImage[3] = 300%
-   */
-
-   slideImage.forEach((img,i)=> {
-       img.style.left = i*100 +"%";
-   });
-
-   slideImage[0].classList.add("active");
-
-   createNavigationDots();
+//Next/previous controls
+function plusSlides(n){
+    showSlides(slideIndex+=n);
 }
 
-init();
+//Thumbnails image controls
+function currentSlide(n){
+    showSlides(slideIndex=n);
+}
 
-//Create navigation dots
-
-function createNavigationDots()
+function showSlides(n)
 {
-    for(let i=0; i < numberofImages; i++)
+    var i;
+    var slides= document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+
+    if(n>slides.length) {slideIndex=1}
+    if(n<1) {slideIndex=slides.length}
+
+    for(i=0; i<slides.length;i++)
     {
-        const dot = document.createElement("div");
-        dot.classList.add("single-dot");
-        navigationDots.appendChild(dot);
+        slides[i].style.display="none";
     }
-        navigationDots.children[0].classList.add("active");
+
+    for(i=0;i<dots.length;i++)
+    {
+        dots[i].className=dots[i].className.replace("active","");
+
+    }
+    slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+function myFunction()
+{
+var element = document.getElementById("myDIV");
+element.classList.toggle("mystyle");
 }
 
-// Next button
 
-nextBtn.addEventList("click",()=>{
-    slidesContainer.style.transform = "translateX(-"+ slidewidth + "px)";
-
-});
