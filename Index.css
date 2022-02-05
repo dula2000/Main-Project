@@ -3,10 +3,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 body
 {
-    font-family: sans-serif;
     background-size: cover;
     background-position: center;
 }
@@ -17,16 +17,6 @@ body
     background-image:linear-gradient(rgba(170, 235, 178, 0.7),rgba(171, 240, 186, 0.7)),url(file:///C:/Users/HP/Downloads/r1.jpg);
     background-size: cover;
     background-position: center;
-}
-.nav
-{
-    width: 100%;
-    height: 60px;
-    margin: auto;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    
 }
 .Menu-bar
 {
@@ -43,35 +33,41 @@ body
     width: 200px;
     float: left;
     height: 70px;
-    color: rgb(0,100,0);
+    padding: 2% 2%;
+    color: rgb(0, 100, 0);
     font-family: 'Times New Roman';
     font-size: 40px;
-    padding-left: 20px;
-    padding-top: 10px;
     float: left;
 }
-.Menu-bar ul
+.nav-links
+{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul
 {
     display: inline-flex;
     list-style: none;
     color: black;
 }
-.Menu-bar ul li
+.nav-links ul li
 {
     width: 110px;
-    margin: 8px;
-    padding: 8px;
-    float: left;
-    font-size: 14px;
+    margin: 5px;
+    font-size: 13px;
+    list-style: none;
+    display: inline-block;
+    padding: 8px 10px;
     position: relative;
 }
-.Menu-bar ul li a
+.nav-links ul li a
 {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    font-size: 13px;
 }
-.Menu-bar ul li a::after
+.nav-links ul li::after
 {
     content: '';
     width: 0%;
@@ -81,7 +77,7 @@ body
     margin: auto;
     transition: 0.5s;
 }
-.Menu-bar ul li a:hover::after
+.nav-links ul li:hover::after
 {
     width: 100%;
 
@@ -100,19 +96,19 @@ body
     display: none;
     
 }
-.Menu-bar ul li:hover .sub-menu-1
+.nav-links ul li:hover .sub-menu-1
 {
     display: block;
     position: absolute;
     margin-top: 5px;
     margin-left: -15px;
 }
-.Menu-bar ul li:hover .sub-menu-1 ul
+.nav-links ul li:hover .sub-menu-1 ul
 {
     display: block;
     margin: 8px;
 }
-.Menu-bar ul li:hover .sub-menu-1 li
+.nav-links ul li:hover .sub-menu-1 li
 {
     width: 150px;
     padding: 1.5px;
@@ -120,11 +116,11 @@ body
     border-radius: 0;
     text-align: left;
 }
-.Menu-bar ul li:hover .sub-menu-1 ul li:last-child
+.nav-links ul li:hover .sub-menu-1 ul li:last-child
 {
     border-bottom: none;
 }
-.Menu-bar ul li:hover .sub-menu-1 ul li a:hover
+.nav-links ul li:hover .sub-menu-1 ul li a:hover
 {
     color: rgb(60, 134, 64);
 }
@@ -184,6 +180,7 @@ body
 {
     padding-left: 20px;
     padding-bottom: 25px;
+    margin: 10px 0 40px;
     font-family: Arial;
     letter-spacing: 1.2px;
     line-height: 30px;
@@ -224,25 +221,43 @@ body
     color: rgb(0,100,0);
     font-size: 60px;
 }
-
+.Menu-bar .tag
+{
+    display: none;
+}
 @media(max-width: 700px)
 {
     .content h1{
         font-size: 20px;
     }
-    .Menu-bar ul li{
+    .nav-links ul li{
         display: block;
     }
-    .Menu-bar{
+    .nav-links{
         position: absolute;
         background: rgb(0,100,0);
+        color: white;
         height: 100vh;
         width: 200px;
         top: 0;
-        right: 0;
+        right: -200px;
         text-align: left;
-        z-index: 2;
+        z-index: 6;
+        transition: 1s;
     }
+    .Menu-bar .tag
+    {
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul 
+    {
+        padding: 20px;
+    }
+    
 }
 /*---Academy intro---*/
     .Academy

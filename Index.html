@@ -8,7 +8,10 @@
     <section class="header">
      <div class="Menu-bar">  <!--Creating nav bar and dop down list-->
         <h2 class="logo">INNOVATE</h2> <!--display the logo-->
-        <i class="fas fa-times"></i>
+        <div class="nav-links" id="navLinks">
+        <div class="tag">
+        <i class="fas fa-times" onclick="hideMenu()"></i>
+        </div>
             <ul>
                 <li><a href="Index.html"><i class="fas fa-home"></i>HOME</a></li>
                 <li><a href="About.html"><i class="fas fa-user"></i>ABOUT</a></li>
@@ -27,11 +30,10 @@
                 <li><a href="newinventors.html"><i class="fas fa-cart-plus"></i>NEW INNOVATION</a></li>
                 <li><a href=""><i class="fas fa-phone"></i>CONTACT</a></li>
             </ul>
-            <i class="fas fa-bars"></i>
-        <div class="search">  <!--Creating search bar-->
-            <input class="srch" type="search" name="" placeholder="Type of text">
-            <a href="#"><button class="btn">Search</button></a>
         </div>
+        <div class="tag">
+            <i class="fas fa-bars" onclick="showMenu()"></i>  
+        </div> 
     </div>
 
         <div class="content">  <!--description and quote-->
@@ -209,5 +211,19 @@
         </div>
         <p>Made With <i class="far fa-heart"></i>By Our Project Members</p>
     </section>
+
+
+<!--JavaScript for toggle menu-->
+    <script>
+        var navLinks= document.getElementById("navLinks");
+        function showMenu()
+        {
+            navLinks.style.right="0";
+        }
+        function hideMenu()
+        {
+            navLinks.style.right="-200px";
+        }
+    </script>
 </body>
 </html>
