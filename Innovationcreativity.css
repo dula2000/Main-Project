@@ -160,67 +160,163 @@
     
 }
 */
-a{
-    text-decoration: none;
-}
-
-ul{
-    list-style: none;
-}
-
-/*Nav bar*/
-.navbar{
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
+.header1
+{
+    min-height: 100vh;
     width: 100%;
+   
+  
+    background-position: center;
+}
+.Menu-bar
+{
+    width: 100%;
+    height: 60px;
+    margin: auto;
+    text-align: center;
+    display: flex;
     justify-content: space-between;
-    padding: 20px;
+    
+}
+.logo
+{   
+    top: 0%;
+    width: 200px;
+    float: left;
+    height: 70px;
+    padding: 2% 2%;
+    color: rgb(0, 100, 0);
+    font-family: 'Times New Roman';
+    font-size: 40px;
+    float: left;
+}
+.nav-links
+{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul
+{
+    display: inline-flex;
+    list-style: none;
     color: black;
 }
-.nav-links{
-    display: flex;
-    align-items: center;
+.nav-links ul li
+{
+    width: 110px;
+    margin: 5px;
+    font-size: 13px;
+    list-style: none;
+    display: inline-block;
+    padding: 8px 10px;
+    position: relative;
 }
-
-.nav-links li{
-    margin: 0 30px;
+.nav-links ul li a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+}
+.nav-links ul li::after
+{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(60, 134, 64);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after
+{
+    width: 100%;
 
 }
-/*The sub menu*/
+.Menu-bar ul li a:hover
+{
+    color: #2bab0d;
+    border-radius: 3px;
+}
+.Menu-bar .fas
+{
+    margin-right: 5px;
+}
 .sub-menu-1
 {
     display: none;
     
 }
-.nav-sub ul li:hover .sub-menu-1
+.nav-links ul li:hover .sub-menu-1
 {
     display: block;
     position: absolute;
-    margin-top: 5px;
-    margin-left: -15px;
+    margin-top: 10px;
+    margin-left: -25px;
 }
-.nav-sub ul li:hover .sub-menu-1 ul
+.nav-links ul li:hover .sub-menu-1 ul
 {
-    display: block;
-    margin: 8px;
+    display:inline-block;
+    margin: 10px;
 }
-.nav-sub ul li:hover .sub-menu-1 li
+.nav-links ul li:hover .sub-menu-1 li
 {
     width: 150px;
-    padding: 1.5px;
-    background: transparent; 
-    border-radius: 0;
+    padding: 2.5px;
+    background:fixed;
+    border-radius: 2;
     text-align: left;
 }
-.nav-sub ul li:hover .sub-menu-1 ul li:last-child
+.nav-links ul li:hover .sub-menu-1 ul li:last-child
 {
-    border-bottom: none;
+    border-bottom:none;
 }
-.nav-sub ul li:hover .sub-menu-1 ul li a:hover
+.nav-links ul li:hover .sub-menu-1 ul li a:hover
 {
     color: rgb(60, 134, 64);
+}
+.search
+{
+    width: 250px;
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.srch
+{
+    font-family: 'Times New Roman';
+    width: 150px;
+    height: 40px;
+    background: white;
+    border: 1px solid black;
+    margin-top: 13px;
+    color: black;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.btn
+{
+    width: 100px;
+    height: 40px;
+    background: rgb(0,100,0);
+    border: 2px solid rgb(0,100,0);
+    margin-top: 13px;
+    color: white;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.btn :focus
+{
+    outline: none;
+}
+.srch:focus
+{
+    outline: none;
 }
 /*topic*/
 header{
@@ -258,10 +354,11 @@ header{
 }
 .ctn{
     padding: 8px 15px;
-    background: #fc036b;
+    background: #2bab0d;
     border-radius: 30px;
-    color: whitesmoke;
+
 }
+
 /*Adding the quote*/
 .william {
     width: 1200px;
@@ -285,6 +382,63 @@ header{
     padding-top: 25px ;
     text-align: center;
 }
+/*What is Innovation*/
+
+section{
+   width: 80%;
+   margin:  80px auto; 
+}
+
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color:#2bab0d;
+}
+
+.row{
+    display: inline-block;  /*paragraph position type*/ 
+    
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+    
+}
+.row .col{
+    display: flex;
+    margin-top: 30px;  /*Changing the paragraph top possition*/
+    flex-direction: column;
+    align-items: center;
+}
+.row .col .pic1{
+    width: 55%;
+    height: 37%;
+}                   /*changing the image size*/
+.row .col .pic2{
+    width: 60%;
+    height: 40%;
+}
+
+.what .row{
+    margin-top: 50px;
+}
+
+h4{
+    font-size: 3vmin;
+    color: #484848;
+    margin: 20px auto;
+
+}
+
+p{
+    color: rgb(12, 14, 13);
+    padding: 0px 40px;
+}
+
+.what .ctn{
+    margin-top: 30px;
+}
+
 /*mobile version*/
 @media only screen and (max-width:850px){
     .Menu-bar{
@@ -296,3 +450,4 @@ header{
         left: 30px;
     }
 }
+

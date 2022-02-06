@@ -6,31 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="Innovationcreativity.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-     <!--Nav bar-->
-     <nav class="navbar">
-         <h1 class="class">INNOVATE</h1>
-     <div class="nav-sub">
-         <ul class="nav-links">
-             <li><a href="Index.html">Home</a></li>
-             <li><a href="About.html">About</a></li>
-             <li><a href="News.html">News</a></li>
-             <li><a href="">Academy</a></li>
-             <div class="sub-menu-1">
-                <ul>
-                    <li><a href="Strategicgrowth.html">Strategic growth mindset</a></li>
-                    <li><a href="Business Model Thinking.html">Business model</a></li>
-                    <li><a href="Innovationcreativity.html">Innovation creativity</a></li>
-                    <li><a href="designthinking.html">Design thinking</a></li>
-                    <li><a href="Institutionalsupport.html">Institution in Sri Lanka</a></li>
-                </ul>
-            </div>
-             <li><a href="newinventors.html">New Innovation</a></li>
-             <li><a href="">Contact Us</a></li>
-         </ul>
-     </div>
-     </nav>
+    <section class="header1">
+        <div class="Menu-bar">  <!--Creating nav bar and dop down list-->
+           <h2 class="logo">INNOVATE</h2> <!--display the logo-->
+           <div class="nav-links" id="navLinks">
+           <div class="tag">
+              <i class="fas fa-times" onclick="hideMenu()"></i>
+           </div>
+               <ul>
+                   <li><a href="Index.html"><i class="fas fa-home"></i>HOME</a></li>
+                   <li><a href="About.html"><i class="fas fa-user"></i>ABOUT</a></li>
+                   <li><a href="News.html"><i class="fas fa-newspaper"></i>NEWS</a></li>
+                   <li><a href="#"><i class="fas fa-graduation-cap"></i></i>ACADEMY</a>
+                       <div class="sub-menu-1">
+                           <ul>
+                               <li class="hover-me"><a href="Strategicgrowth.html">Strategic growth mindset</a></li>
+                               <li><a href="Business Model Thinking.html">Business model</a></li>
+                               <li><a href="Innovationcreativity.html">Innovation creativity</a></li>
+                               <li><a href="designthinking.html">Design thinking</a></li>
+                               <li><a href="Institutionalsupport.html">Institution in Sri Lanka</a></li>
+                           </ul>
+                       </div>
+                   </li>
+                   <li><a href="newinventors.html"><i class="fas fa-cart-plus"></i>NEW INNOVATION</a></li>
+                   <li><a href=""><i class="fas fa-phone"></i>CONTACT</a></li>
+               </ul>
+           </div>
+           <div class="tag">
+               <i class="fas fa-bars" onclick="showMenu()"></i>  
+           </div> 
+       </div>
       
 
 <header>
@@ -51,5 +59,30 @@
         
     </header>
 
+    <!--What is Innovation and Creativity-->
+    <section class="What">
+          <div class="title">
+              
+              
+          </div>
+                <div class="row">
+                    <div class="col">
+                        <img class="pic1" src="pic/pic 3.jpg" alt="">
+                        <h2>What is Innovation and Creativity Training</h2>
+                        <p><b>Creativity and Innovation Training</b> covers creative thinking and problem solving methods that generate new ideas and solve problems.
+                            Creativity and Innovation Training Course will provide you with a range of tools and methods to enhance your creative and business thinking and innovation.</p>
+                        <a href="#" class="ctn">Learn More</a>
+                    </div>
+                    <div class="col">
+                        <img class="pic2" src="pic/pic 4.jpg" alt="">
+                        <h2>Innovation and Creativity Training</h2>
+                        <p>The training helps in thinking differently on a situation than usual perspective approach. It is the key to resolve professional obstacles.
+                            It also helps in being productive and staying motivated. 
+                            The creative thinking skills assist in approaching the given circumstances methodically and adopt a renewed thinking in process, product, and problem solving.
+                           </p>
+                        <a href="#" class="ctn">Learn More</a>
+                    </div>
+                </div>
+    </section>
 </body>
 </html>
