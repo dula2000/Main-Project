@@ -249,6 +249,7 @@ section{
     border-radius: 10px;
     cursor: pointer;
     transition: .4s ease;
+    
 }
 .c .box .content .bb a{
     text-decoration: none;
@@ -264,26 +265,28 @@ section{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
+    margin-top: 0;
 }
 body
-{
-    font-family: sans-serif;
+{   
+    
     background-size: cover;
     background-position: center;
 }
 .header
-{    /*option of the landing background*/
-     top: 0%;
-    min-height: 143vh;
+{
+   
+    min-height: 100vh;
     width: 100%;
     background-image:linear-gradient(rgba(170, 235, 178, 0.7),rgba(171, 240, 186, 0.7)),url(file:///C:/Users/HP/Downloads/r1.jpg);
     background-size: cover;
     background-position: center;
 }
 .Menu-bar
-{   top: 0%;
+{
     width: 100%;
-    height: 80px;
+    height: 60px;
     margin: auto;
     text-align: center;
     display: flex;
@@ -292,81 +295,99 @@ body
 }
 .logo
 {
-    top:0%;
-        width: 200px;
+    width: 200px;
     float: left;
     height: 70px;
-    color: rgb(0,100,0);
+    padding: 2% 2%;
+    color: rgb(0, 100, 0);
     font-family: 'Times New Roman';
     font-size: 40px;
-    padding-left: 20px;
-    padding-top: 10px;
     float: left;
 }
-.Menu-bar ul
+.nav-links
+{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul
 {
     display: inline-flex;
     list-style: none;
     color: black;
 }
-.Menu-bar ul li
+.nav-links ul li
 {
-    width: 120px;
-    margin: 8px;
-    padding: 8px;
-    float: left;
-    font-size: 14px;
+    width: 110px;
+    margin: 5px;
+    font-size: 13px;
+    list-style: none;
+    display: inline-block;
+    padding: 8px 10px;
     position: relative;
 }
-.Menu-bar ul li a
+.nav-links ul li a
 {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    font-size: 13px;
+}
+.nav-links ul li::after
+{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(60, 134, 64);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after
+{
+    width: 100%;
+
 }
 .Menu-bar ul li a:hover
 {
     color: #2bab0d;
     border-radius: 3px;
 }
-.Menu-bar .fa
+.Menu-bar .fas
 {
-    margin-right: 8px;
+    margin-right: 5px;
 }
 .sub-menu-1
 {
     display: none;
     
 }
-.Menu-bar ul li:hover .sub-menu-1
+.nav-links ul li:hover .sub-menu-1
 {
     display: block;
     position: absolute;
     margin-top: 5px;
     margin-left: -15px;
 }
-.Menu-bar ul li:hover .sub-menu-1 ul
+.nav-links ul li:hover .sub-menu-1 ul
 {
     display: block;
     margin: 8px;
-
 }
-.Menu-bar ul li:hover .sub-menu-1 li
+.nav-links ul li:hover .sub-menu-1 li
 {
     width: 150px;
     padding: 1.5px;
     background: transparent;
-    border-bottom: 1px dotted black;
     border-radius: 0;
     text-align: left;
 }
-.Menu-bar ul li:hover .sub-menu-1 ul li:last-child
+.nav-links ul li:hover .sub-menu-1 ul li:last-child
 {
     border-bottom: none;
 }
-.Menu-bar ul li:hover .sub-menu-1 ul li a:hover
+.nav-links ul li:hover .sub-menu-1 ul li a:hover
 {
-    color: #2bab0d;
+    color: rgb(60, 134, 64);
 }
 .search
 {
@@ -380,7 +401,7 @@ body
     font-family: 'Times New Roman';
     width: 150px;
     height: 40px;
-    background: transparent;
+    background: white;
     border: 1px solid black;
     margin-top: 13px;
     color: black;
@@ -410,6 +431,98 @@ body
 .srch:focus
 {
     outline: none;
+}
+.content
+{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: black;
+    position: relative;
+    text-align: center;
+}
+.content .par
+{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    margin: 10px 0 40px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+.content h1
+{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 14%;
+    letter-spacing: 2px;
+}
+.content .cn
+{
+    width: 160px;
+    height: 40px;
+    background: #2bab0d;
+    border: none;
+    margin-bottom: 100px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.content .cn a
+{
+    text-decoration: none;
+    color: black;
+    transition: .3s ease;
+}
+.cn:hover
+{
+    background: yellowgreen;
+}
+.content span
+{
+    color: rgb(0,100,0);
+    font-size: 60px;
+}
+.Menu-bar .tag
+{
+    display: none;
+}
+@media(max-width: 700px)
+{
+    .content h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: rgb(0,100,0);
+        color: white;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 6;
+        transition: 1s;
+    }
+    .Menu-bar .tag
+    {
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul 
+    {
+        padding: 20px;
+    }
+    
 }
 /*adding quotes styles*/
 .william .quote{
@@ -465,7 +578,7 @@ body
 
  /*----footer-----*/
  .footer
- {   top: 2800px; /*Change the footer position*/
+ {   top: 3200px; /*Change the footer position*/
      width: 100%;
      text-align: center;
      padding: 30px 0;
