@@ -13,3 +13,13 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
   padding: 0; }
+
+  @font-face {
+    font-family: "Montserrat-Bold";
+    src: url(Fonts/Montserrat-Bold.ttf); }
+  @font-face {
+    font-family: "Roboto-Regular";
+    src: url(Fonts/Roboto-Regular.ttf); }
+  @font-face {
+    font-family: "Roboto-Italic";
+    src: url(Fonts/Roboto-Italic.ttf); }
