@@ -14,12 +14,24 @@ time, mark, audio, video {
   margin: 0;
   padding: 0; }
 
-  @font-face {
-    font-family: "Montserrat-Bold";
-    src: url(Fonts/Montserrat-Bold.ttf); }
-  @font-face {
-    font-family: "Roboto-Regular";
-    src: url(Fonts/Roboto-Regular.ttf); }
-  @font-face {
-    font-family: "Roboto-Italic";
-    src: url(Fonts/Roboto-Italic.ttf); }
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url(Fonts/Montserrat-Bold.ttf); }
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url(Fonts/Roboto-Regular.ttf); }
+@font-face {
+  font-family: "Roboto-Italic";
+  src: url(Fonts/Roboto-Italic.ttf); }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-Bold"; }
+    
+.container-fluid {
+  padding: 0; }
+    
+.card {
+  border: none;
+  border-radius: 0; }
+  .card img {
+    border-radius: 0; }    
