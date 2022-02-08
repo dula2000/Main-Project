@@ -34,4 +34,16 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
   border-radius: 0; }
   .card img {
-    border-radius: 0; }    
+    border-radius: 0; }
+    
+header .card a, .vr-gallery a.btn {
+  background-color: #03133a;
+  width: 200px;
+  padding: 12px 0;
+  color: #ffffff;
+  font-family: "Montserrat-Bold";
+  margin-top: 20px;
+  border-radius: 0; }
+  header .card a:hover, .vr-gallery a.btn:hover {
+    background: #ffffff;
+    color: #03133a; }
