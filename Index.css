@@ -718,3 +718,66 @@ body
         border: 1px solid #ccc;
         box-sizing: border-box;
     }
+
+    /*------Design thinking page-------*/
+    .design-h
+    {
+        width: 80%;
+        margin: auto;
+    }
+    .d-content
+    {
+        flex-basis: 58% 38%;
+        margin-bottom: 30px;
+    }
+    .d-content h1
+    {
+        font-family: 'Times New Roman';
+        font-size: 55px;
+        padding-left: 20px;
+        margin-top: 10%;
+        letter-spacing: 2px;
+    }
+    .d-content span
+    {
+        color: rgb(0, 100, 0);
+        font-size: 65px;
+    }
+    .d-content img
+    {
+        width: 100%;
+        border-radius: 10px;
+    }
+    .design
+    {
+        width: 50%;
+        margin: auto;
+    }
+    .design-col
+    {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .design-col p
+    {
+        color: black;
+        font-size: 20px;
+        line-height: 30px; 
+        margin-top: 30px;
+    }
+    .design-col h4
+    {
+        font-size: 25px;
+        margin-bottom: 5px;
+        font-weight: 600;
+    }
+    .design-col img
+    {
+        width: 100%;
+        cursor: pointer;
+    }
+    .design-col h1
+    {
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
