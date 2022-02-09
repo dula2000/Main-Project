@@ -600,3 +600,16 @@ box css parts
 }
 */
 
+.row .col .bb{
+    width: 100px;
+    height: 40px;
+    background: rgb(167, 211, 167);
+    border: 2px solid rgb(0,100,0);
+    margin-top: 13px;
+    color: white;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+    
+}
