@@ -124,49 +124,6 @@ body
 {
     color: rgb(60, 134, 64);
 }
-.search
-{
-    width: 250px;
-    float: left;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.srch
-{
-    font-family: 'Times New Roman';
-    width: 150px;
-    height: 40px;
-    background: white;
-    border: 1px solid black;
-    margin-top: 13px;
-    color: black;
-    border-right: none;
-    font-size: 16px;
-    float: left;
-    padding: 10px;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
-}
-.btn
-{
-    width: 100px;
-    height: 40px;
-    background: rgb(0,100,0);
-    border: 2px solid rgb(0,100,0);
-    margin-top: 13px;
-    color: white;
-    font-size: 15px;
-    border-bottom-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-.btn :focus
-{
-    outline: none;
-}
-.srch:focus
-{
-    outline: none;
-}
 .content
 {
     width: 1200px;
