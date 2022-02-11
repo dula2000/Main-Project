@@ -434,7 +434,7 @@ section{
 }
 
 h2{
-    font-size: 3vmin;
+    font-size: 6vmin;
     color: #484848;
     margin: 30px auto;  /*Change the gap between pic and para */
 
@@ -612,4 +612,10 @@ box css parts
     border-bottom-right-radius: 5px;
     outline: none;
     
+}
+
+.row .col .llb{
+     background-color: #033627;
+     color: white;
+     font-size: large;
 }
