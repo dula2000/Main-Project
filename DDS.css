@@ -1,0 +1,364 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body
+{
+    overflow-x: hidden;
+    background-size: cover;
+    background-position: center;
+}
+.header
+{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(170, 235, 178, 0.7),rgba(171, 240, 186, 0.7)),url(file:///C:/Users/HP/Downloads/r1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.Menu-bar
+{
+    width: 100%;
+    height: 60px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.logo
+{
+    width: 200px;
+    float: left;
+    height: 70px;
+    padding: 2% 2%;
+    color: rgb(0, 100, 0);
+    font-family: 'Times New Roman';
+    font-size: 40px;
+    float: left;
+}
+.nav-links
+{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: black;
+}
+.nav-links ul li
+{
+    width: 110px;
+    margin: 5px;
+    font-size: 13px;
+    list-style: none;
+    display: inline-block;
+    padding: 8px 10px;
+    position: relative;
+}
+.nav-links ul li a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+}
+.nav-links ul li::after
+{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(60, 134, 64);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after
+{
+    width: 100%;
+
+}
+.Menu-bar ul li a:hover
+{
+    color: #2bab0d;
+    border-radius: 3px;
+}
+.Menu-bar .fas
+{
+    margin-right: 5px;
+}
+.sub-menu-1
+{
+    display: none;
+    
+}
+.nav-links ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: -15px;
+}
+.nav-links ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 8px;
+}
+.nav-links ul li:hover .sub-menu-1 li
+{
+    width: 150px;
+    padding: 1.5px;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.nav-links ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+}
+.nav-links ul li:hover .sub-menu-1 ul li a:hover
+{
+    color: rgb(60, 134, 64);
+}
+.sub-header
+{
+    height: 50vh;
+    width: 100%;
+
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: black;
+}
+.sub-header h1
+{
+    margin-top: 100px;
+}
+
+
+
+
+
+
+/*Topic*/
+
+
+
+
+header{
+    top: 0%;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('pic/n1.jpg') ;
+    background-position:bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header .content{
+   
+    margin-bottom: 150px;
+    color: rgb(167, 20, 20);
+    text-align: center;
+}
+
+.header .content h1{   
+    font-size: 4vmin;
+    
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.header .content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+}
+.ctn{
+    padding: 8px 15px;
+    background: #2bab0d;
+    border-radius: 30px;
+    margin-top: 20px auto;
+
+}
+
+/*Adding the quote*/
+.william {
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: black;
+    position:absolute;
+    text-align: left;
+    top: 10%;    /*changing the quote top position*/
+    margin-bottom: 10px;
+
+}
+.william .quote{
+    margin-top: 8%;
+    padding-left: 20px;
+    font-family: 25px;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    align-content: center;
+    padding-bottom: 25px;
+    padding-top: 25px ;
+    text-align: center;
+}
+
+
+
+
+
+/*Innovation Creativity*/
+
+
+
+
+section{
+   width: 80%;
+   margin:  80px auto;  /*Cjange the whole section top position*/
+}
+
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color:#2bab0d;
+}
+.title h1{
+    font-size: 70px;
+    color:rgb(206, 128, 27) ;
+}
+.row{
+    display: inline-block;  /*paragraph position type*/ 
+    
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+    
+}
+.row .col{
+    display: flex;
+    margin-top: 50px;  /*Changing the paragraph top possition*/
+    flex-direction: column;
+    align-items: center;
+}
+.row .col .pic11{
+    margin-top: 20px;
+    width: 55%;
+    height: 37%;
+}                   /*changing the image size*/
+.row .col .pic22{
+    margin-top: 40px;
+    width: 50%;
+    height: 30%;
+}
+.row .col .pic33{
+    margin-top: 40px;
+    width: 60%;
+    height: 10%;
+}
+.what .row{
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 6vmin;
+    color: #484848;
+    margin: 30px auto;  /*Change the gap between pic and para */
+
+}
+
+p{
+    color: rgb(12, 14, 13);
+    padding: 0px 40px;
+    margin-bottom: 20px;  /*Change the Button gap*/
+}
+
+.what .ctn{
+    margin-top: 30px;
+}
+
+/*mobile version*/
+@media only screen and (max-width:850px){
+    .Menu-bar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+}
+.explore{
+    width: 100%;
+    height: 100vh;
+    background-image: url('pic/n2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.explore-content{
+    width: 50%;
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column ;
+}
+
+.explore-content h1{
+   font-size: 7vmin;
+   margin: 50px;
+}
+
+.explore-content p{
+    color: beige;
+}
+
+
+
+
+.row .col .bb{
+    width: 100px;
+    height: 40px;
+    background: rgb(167, 211, 167);
+    border: 2px solid rgb(0,100,0);
+    margin-top: 13px;
+    color: white;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+    
+}
+
+.row .col .llb{
+     background-color: #033627;
+     color: white;
+     font-size: large;
+}
+
+
+
+
+/*Strategic Growth Mindset*/
+
+
+
+
+

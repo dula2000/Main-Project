@@ -5,26 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="Innovationcreativity.css" rel="stylesheet" type="text/css">
+    <link href="DDS.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-    <section class="header1">
-        <div class="Menu-bar">  <!--Creating nav bar and drop down list-->
+    <section class="header">
+        <div class="Menu-bar">  <!--Creating nav bar and dop down list-->
            <h2 class="logo">INNOVATE</h2> <!--display the logo-->
+           <div class="nav-links" id="navLinks">
+           <div class="tag">
+              <i class="fas fa-times" onclick="hideMenu()"></i>
+           </div>
                <ul>
                    <li><a href="Index.html"><i class="fas fa-home"></i>HOME</a></li>
-                   <li><a href="#"><i class="fas fa-user"></i>ABOUT US</a>
-                       <div class="sub-menu-1">
-                           <ul>
-                               <li><a href="#">Mission</a></li>
-                               <li><a href="#">Vision</a></li>
-                               <li><a href="#">Team</a></li>
-                           </ul>
-                       </div>
-                   </li>
-                   <li><a href="News.html"><i class="fas fa-newspaper"></i>NEWS</a></li>
+                   <li><a href="About.html"><i class="fas fa-user"></i>ABOUT</a></li>
+                   <li><a href="NewsPageIndex.html"><i class="fas fa-newspaper"></i>NEWS</a></li>
                    <li><a href="#"><i class="fas fa-graduation-cap"></i></i>ACADEMY</a>
                        <div class="sub-menu-1">
                            <ul>
@@ -32,35 +28,34 @@
                                <li><a href="Business Model Thinking.html">Business model</a></li>
                                <li><a href="Innovationcreativity.html">Innovation creativity</a></li>
                                <li><a href="designthinking.html">Design thinking</a></li>
-                               <li><a href="Institutionalsupport.html">Institution in Sri Lanka</a></li>
+                               <li><a href="inventors.html">Institution in Sri Lanka</a></li>
                            </ul>
                        </div>
                    </li>
                    <li><a href="newinventors.html"><i class="fas fa-cart-plus"></i>NEW INNOVATION</a></li>
-                   <li><a href=""><i class="fas fa-phone"></i>CONTACT US</a></li>
+                   <li><a href="Contact.html"><i class="fas fa-phone"></i>CONTACT</a></li>
                </ul>
-           
+           </div>
+           <div class="tag">
+               <i class="fas fa-bars" onclick="showMenu()"></i>  
+           </div> 
        </div>
+    
+           <div class="content">  <!--description and quote-->
+               <h1>Innovation and Creativity</h1>
+               <p class="par">
+                   <q>
+                    Dragons take on many forms – the hardest task of the day, a new responsibility, an impending deadline, or even dealing with conflict –<br> and the trick is to just slay the dragon and move on. Don’t overthink it. To succeed,
+                    <br> you have to have the confidence to take things head on and keep moving forward.</q><br>
+                       <em>( Sarah Mannone, Executive VP of Trekk)</em>
+               </p>
+               <button class="cn"><a href="Innovationcreativity.html">JOIN US</a></button>
+           </div>
+    </section>
 
 
-<header>
-    <div class="header-content">
-        <h1>Innovation and Creativity</h1>
-        <dive class="line"></dive>
-    </div>
-          <!--adding quotes to the web site-->
-          <div class="william">
 
-            <p class="quote">
-              <q>
-                Everyone has the capacity to be innovative and creative in their day-today work – regardless of your job!<br> it’s a big revenue-earning campaign or a more efficient way to complete a task, sometimes all it takes is a spark to get the ideas flowing.<br> Here are some quotes to help spark your mind:
-        “Learning and innovation go hand in hand.<br>The arrogance of success is to think that what you did yesterday will be sufficient for tomorrow.
-              </q><br>
-              <em>(William Pollard)</em>
-            </p>
-        
-    </header>
-</section>
+
     <!--What is Innovation and Creativity-->
     <section class="What">
           <div class="title">
