@@ -425,10 +425,14 @@ section{
 }                   /*changing the image size*/
 .row .col .pic2{
     margin-top: 40px;
-    width: 60%;
-    height: 40%;
+    width: 50%;
+    height: 30%;
 }
-
+.row .col .pic3{
+    margin-top: 40px;
+    width: 60%;
+    height: 10%;
+}
 .what .row{
     margin-top: 50px;
 }
