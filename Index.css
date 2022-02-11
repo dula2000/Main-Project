@@ -363,10 +363,10 @@ body
     }
     .layer h3
     {
-        width: 100px;
-        font-weight: 500;
+        width: 150px;
         color: rgb(0, 100, 0);
-        font-size: 26px;
+        font-size: 20px;
+        text-align: center;
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
@@ -377,9 +377,27 @@ body
     .layer:hover h3
     {
         font-weight: bold;
-        bottom: 49%;
+        bottom: 35%;
         opacity: 1;
     }
+    .layer .green-btn
+    {
+        text-align: center;
+        border-radius: 20px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    .layer:hover .green-btn
+    {
+        bottom: 20%;
+        opacity: 1;
+    }
+
+
     /*-----About new innovations-----*/
     .newinno
     {
