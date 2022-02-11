@@ -799,3 +799,10 @@ body
         font-size: 30px;
         margin-bottom: 5px;
     }
+    .design-col iframe
+    {
+        margin-top: 30px;
+        width: 100%;
+        height: 400px;
+    }
+
