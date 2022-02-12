@@ -185,11 +185,17 @@ header{
     margin-bottom: 30px;
 
 }
-.ctn{
-    padding: 8px 15px;
-    background: #2bab0d;
-    border-radius: 30px;
-    margin-top: 20px auto;
+.cn{
+    width: 100px;
+    height: 40px;
+    background: rgb(167, 211, 167);
+    border: 2px solid rgb(0,100,0);
+    margin-top: 13px;
+    color: white;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
 
 }
 
@@ -274,14 +280,14 @@ section{
     margin-top: 50px;
 }
 
-h2{
-    font-size: 6vmin;
+h2{                      /*This code relevant to the Strategic Mindset*/
+    font-size: 6vmin; 
     color: #484848;
     margin: 30px auto;  /*Change the gap between pic and para */
 
 }
 
-p{
+p{    /*This code relevant to the Strategic Mindset*/
     color: rgb(12, 14, 13);
     padding: 0px 40px;
     margin-bottom: 20px;  /*Change the Button gap*/
@@ -362,3 +368,65 @@ p{
 
 
 
+.row-1{
+    display: inline-block;  /*paragraph position type*/ 
+    
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+    
+}
+.row-1 .col-1{
+    display: flex;
+    margin-top: 50px;  /*Changing the paragraph top possition*/
+    flex-direction: column;
+    align-items: center;
+}
+.row-1 .col-1 .pic11-1{
+    margin-top: 20px;
+    width: 55%;
+    height: 37%;
+}                   /*changing the image size*/
+.row-1 .col-1 .pic22-1{
+    margin-top: 40px;
+    width: 50%;
+    height: 30%;
+}
+.row-1 .col-1 .pic33-1{
+    margin-top: 40px;
+    width: 60%;
+    height: 10%;
+}
+.what .row-1{
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 6vmin;
+    color: #484848;
+    margin: 30px auto;  /*Change the gap between pic and para */
+
+}
+
+p{
+    color: rgb(18, 90, 54);
+    padding: 0px 40px;
+    margin-bottom: 20px;  /*Change the Button gap*/
+    align-items: center;
+}
+
+.row-1 .col-1 .cn{
+    
+    width: 100px;
+    height: 40px;
+    background: rgb(4, 88, 4);
+    border: 2px solid rgb(4, 19, 4);
+    margin-top: 13px;
+    color: white;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+    text-align: center;
+}
