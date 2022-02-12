@@ -52,8 +52,8 @@ header{
     margin-bottom: 30px;
 
 }
-.cn{
-    width: 100px;
+.cn {
+   /* width: 100px;
     height: 40px;
     background: rgb(167, 211, 167);
     border: 2px solid rgb(0,100,0);
@@ -63,7 +63,32 @@ header{
     border-bottom-right-radius: 5px;
     border-bottom-right-radius: 5px;
     outline: none;
-
+ text-decoration: none;
+ text-align: center;
+ */
+ background-color: black;
+    color: aliceblue;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+}
+.card1 a{
+    background-color: black;
+    color: aliceblue;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 10px 15px;
+    text-decoration: none;
+}
+.card1:hover{
+    background-color: aquamarine;
+    color: aliceblue;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
 }
 
 /*Adding the quote*/
@@ -206,7 +231,7 @@ p{    /*This code relevant to the Strategic Mindset*/
 
 
 
-.row_1 .col .bb{
+ .col .bb{
     width: 100px;
     height: 40px;
     background: rgb(167, 211, 167);
@@ -285,11 +310,11 @@ p{
 
 .row-1 .col-1 .cn{
     
-    width: 100px;
-    height: 40px;
-    background: rgb(4, 88, 4);
+    width: 150px;
+    height: 50px;
+    background: rgb(78, 165, 78);
     border: 2px solid rgb(4, 19, 4);
-    margin-top: 13px;
+    margin-top: 10px;
     color: white;
     font-size: 15px;
     border-bottom-right-radius: 5px;
@@ -303,12 +328,13 @@ p{
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+    flex-wrap: wrap;
 }
 
 .card{
     background: white;
     width: 300px;
-    height: 600px;
+    height: 590px;
     margin: 10px;
     border-radius: 15px;
 }
@@ -333,6 +359,26 @@ p{
     background-image: url(pic/udemy1.jpg);
 }
 
+.card p{
+    padding: 10px;
+}
+
+.card a{
+    background-color: black;
+    color: aliceblue;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+}
+.card:hover{
+    background-color: aquamarine;
+    color: aliceblue;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
 h1{
     font-size: 6vmin;
     color: #484848;
