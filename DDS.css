@@ -429,4 +429,45 @@ p{
     border-bottom-right-radius: 5px;
     outline: none;
     text-align: center;
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    background: white;
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.card-image{
+  
+    height: 150px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.car-1{
+    background-image: url(pic/tonex);
+}
+
+.car-2{
+    background-image: url(pic/coursera123);
+}
+
+.car-3{
+    background-image: url(pic/udemy1.jpg);
+}
+
+h1{
+    font-size: 6vmin;
+    color: #484848;
+    margin: 30px auto; 
+    text-align: center;
 }
