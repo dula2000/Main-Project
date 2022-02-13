@@ -1,0 +1,387 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body
+{
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*Topic*/
+
+
+
+
+header{
+    top: 0%;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('pic/n1.jpg') ;
+    background-position:bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header .content{
+   
+    margin-bottom: 150px;
+    color: rgb(167, 20, 20);
+    text-align: center;
+}
+
+.header .content h1{   
+    font-size: 4vmin;
+    
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.header .content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+}
+.cn {
+   /* width: 100px;
+    height: 40px;
+    background: rgb(167, 211, 167);
+    border: 2px solid rgb(0,100,0);
+    margin-top: 13px;
+    color: white;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+ text-decoration: none;
+ text-align: center;
+ */
+ background-color: black;
+    color: aliceblue;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+}
+.card1 a{
+    background-color: black;
+    color: aliceblue;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 10px 15px;
+    text-decoration: none;
+}
+.card1:hover{
+    background-color: aquamarine;
+    color: aliceblue;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+
+/*Adding the quote*/
+.william {
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: black;
+    position:absolute;
+    text-align: left;
+    top: 10%;    /*changing the quote top position*/
+    margin-bottom: 10px;
+
+}
+.william .quote{
+    margin-top: 8%;
+    padding-left: 20px;
+    font-family: 25px;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    align-content: center;
+    padding-bottom: 25px;
+    padding-top: 25px ;
+    text-align: center;
+}
+
+
+
+
+
+/*Innovation Creativity*/
+
+
+
+
+section{
+   width: 80%;
+   margin: auto;  /*Cjange the whole section top position*/
+}
+
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color:#2bab0d;
+}
+.title h1{
+    font-size: 80px;
+    color:rgb(206, 128, 27) ;
+}
+.row_2{
+    display: inline-block;  /*paragraph position type*/ 
+    
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+    
+}
+.row_2 .col{
+    display: flex;
+    margin-top: 50px;  /*Changing the paragraph top possition*/
+    flex-direction: column;
+    align-items: center;
+}
+.row_2 .col .pic11{
+    margin-top: 20px;
+    width: 55%;
+    height: 37%;
+}                   /*changing the image size*/
+.row_2 .col .pic22{
+    margin-top: 40px;
+    width: 50%;
+    height: 30%;
+}
+.row_2 .col .pic33{
+    margin-top: 40px;
+    width: 60%;
+    height: 10%;
+}
+.what .row_1{
+    margin-top: 50px;
+}
+
+h2{                      /*This code relevant to the Strategic Mindset*/
+    font-size: 6vmin; 
+    
+    margin: 30px auto;  /*Change the gap between pic and para */
+
+}
+
+p{    /*This code relevant to the Strategic Mindset*/
+    color: rgb(12, 14, 13);
+    padding: 0px 40px;
+    margin-bottom: 20px;  /*Change the Button gap*/
+}
+
+.what .ctn{
+    margin-top: 30px;
+}
+
+/*mobile version*/
+@media only screen and (max-width:850px){
+    .Menu-bar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+}
+.explore{
+    width: 100%;
+    height: 100vh;
+    background-image: url('pic/n2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.explore-content{
+    width: 50%;
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column ;
+}
+
+.explore-content h1{
+   font-size: 7vmin;
+   margin: 50px;
+}
+
+.explore-content p{
+    color: beige;
+}
+
+
+
+
+ .col .bb{
+    width: 100px;
+    height: 40px;
+    background: rgb(167, 211, 167);
+    border: 2px solid rgb(0,100,0);
+    margin-top: 13px;
+    color: white;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+    
+}
+
+.row_1 .col .llb{
+     background-color: #033627;
+     color: white;
+     font-size: large;
+}
+
+
+
+
+/*Strategic Growth Mindset*/
+
+
+
+
+
+.row-1{
+    display: inline-block;  /*paragraph position type*/ 
+    
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+    
+}
+.row-1 .col-1{
+    display: flex;
+    margin-top: 50px;  /*Changing the paragraph top possition*/
+    flex-direction: column;
+    align-items: center;
+}
+.row-1 .col-1 .pic11-1{
+    margin-top: 20px;
+    width: 55%;
+    height: 37%;
+}                   /*changing the image size*/
+.row-1 .col-1 .pic22-1{
+    margin-top: 40px;
+    width: 50%;
+    height: 30%;
+}
+.row-1 .col-1 .pic33-1{
+    margin-top: 40px;
+    width: 60%;
+    height: 10%;
+}
+.what .row-1{
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 6vmin;
+    color: #484848;
+    margin: 30px auto;  /*Change the gap between pic and para */
+
+}
+
+p{
+    color: rgb(18, 90, 54);
+    padding: 0px 40px;
+    margin-bottom: 20px;  /*Change the Button gap*/
+    align-items: center;
+}
+
+.row-1 .col-1 .cn{
+    
+    width: 150px;
+    height: 50px;
+    background: rgb(78, 165, 78);
+    border: 2px solid rgb(4, 19, 4);
+    margin-top: 10px;
+    color: white;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.card{
+    background: white;
+    width: 300px;
+    height: 590px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.card-image{
+  
+    height: 150px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.car-1{
+    background-image: url(pic/tonex);
+}
+
+.car-2{
+    background-image: url(pic/coursera123);
+}
+
+.car-3{
+    background-image: url(pic/udemy1.jpg);
+}
+
+.card p{
+    padding: 10px;
+}
+
+.card a{
+    background-color: black;
+    color: aliceblue;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+}
+.card:hover{
+    background-color: aquamarine;
+    color: aliceblue;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+h1{
+    font-size: 6vmin;
+    color: #484848;
+    margin: 30px auto; 
+    text-align: center;
+}

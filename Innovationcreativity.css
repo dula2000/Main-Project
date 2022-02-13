@@ -1,340 +1,33 @@
 *
 {
-    top:0;
+    
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 
 }
-.header
-{
-    min-height: 100vh;
-    width: 100%;
 
-}
 
 body,html{
     overflow-x: hidden;
-}
-/*
-.Menu-bar
-{
-    width: 100%;
-    height: 60px;
-    margin: auto;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    
-}
-.logo
-{
-    width: 200px;
-    float: left;
-    height: 70px;
-    padding: 2% 2%;
-    color: rgb(0, 100, 0);
-    font-family: 'Times New Roman';
-    font-size: 40px;
-    float: left;
-}
-.nav-links
-{
-    flex: 1;
-    text-align: right;
-}
-.nav-links ul
-{
-    display: inline-flex;
-    list-style: none;
-    color: black;
-}
-.nav-links ul li
-{
-    width: 110px;
-    margin: 5px;
-    font-size: 13px;
-    list-style: none;
-    display: inline-block;
-    padding: 8px 10px;
-    position: relative;
-}
-.nav-links ul li a
-{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 13px;
-}
-.nav-links ul li::after
-{
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: rgb(60, 134, 64);
-    display: block;
-    margin: auto;
-    transition: 0.5s;
-}
-.nav-links ul li:hover::after
-{
-    width: 100%;
-
-}
-.Menu-bar ul li a:hover
-{
-    color: #2bab0d;
-    border-radius: 3px;
-}
-.Menu-bar .fas
-{
-    margin-right: 5px;
-}
-.sub-menu-1
-{
-    display: none;
-    
-}
-.nav-links ul li:hover .sub-menu-1
-{
-    display: block;
-    position: absolute;
-    margin-top: 5px;
-    margin-left: -15px;
-}
-.nav-links ul li:hover .sub-menu-1 ul
-{
-    display: block;
-    margin: 8px;
-}
-.nav-links ul li:hover .sub-menu-1 li
-{
-    width: 150px;
-    padding: 1.5px;
-    background: transparent;
-    border-radius: 0;
-    text-align: left;
-}
-.nav-links ul li:hover .sub-menu-1 ul li:last-child
-{
-    border-bottom: none;
-}
-.nav-links ul li:hover .sub-menu-1 ul li a:hover
-{
-    color: rgb(60, 134, 64);
-}
-
-
-.Menu-bar .tag
-{
-    display: none;
-}
-@media(max-width: 700px)
-{
-    .content h1{
-        font-size: 20px;
-    }
-    .nav-links ul li{
-        display: block;
-    }
-    .nav-links{
-        position: absolute;
-        background: rgb(0,100,0);
-        color: white;
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: -200px;
-        text-align: left;
-        z-index: 6;
-        transition: 1s;
-    }
-    .Menu-bar .tag
-    {
-        display: block;
-        color: white;
-        margin: 10px;
-        font-size: 22px;
-        cursor: pointer;
-    }
-    .nav-links ul 
-    {
-        padding: 20px;
-    }
-    
-}
-*/
-.header1
-{
-    min-height: 100vh;
-    width: 100%;
-   
-  
+    background-size: cover;
     background-position: center;
 }
-.Menu-bar
-{
-    width: 100%;
-    height: 60px;
-    margin: auto;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    
-}
-.logo
-{   
-    top: 0%;
-    width: 200px;
-    float: left;
-    height: 70px;
-    padding: 2% 2%;
-    color: rgb(0, 100, 0);
-    font-family: 'Times New Roman';
-    font-size: 40px;
-    float: left;
-}
-.nav-links
-{
-    flex: 1;
-    text-align: right;
-}
-.nav-links ul
-{
-    display: inline-flex;
-    list-style: none;
-    color: black;
-}
-.nav-links ul li
-{
-    width: 110px;
-    margin: 5px;
-    font-size: 13px;
-    list-style: none;
-    display: inline-block;
-    padding: 8px 10px;
-    position: relative;
-}
-.nav-links ul li a
-{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 13px;
-}
-.nav-links ul li::after
-{
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: rgb(60, 134, 64);
-    display: block;
-    margin: auto;
-    transition: 0.5s;
-}
-.nav-links ul li:hover::after
-{
-    width: 100%;
 
-}
-.Menu-bar ul li a:hover
-{
-    color: #2bab0d;
-    border-radius: 3px;
-}
-.Menu-bar .fas
-{
-    margin-right: 5px;
-}
-.sub-menu-1
-{
-    display: none;
-    
-}
-.nav-links ul li:hover .sub-menu-1
-{
-    display: block;
-    position: absolute;
-    margin-top: 10px;
-    margin-left: -25px;
-}
-.nav-links ul li:hover .sub-menu-1 ul
-{
-    display:inline-block;
-    margin: 10px;
-}
-.nav-links ul li:hover .sub-menu-1 li
-{
-    width: 150px;
-    padding: 2.5px;
-    background:fixed;
-    border-radius: 2;
-    text-align: left;
-}
-.nav-links ul li:hover .sub-menu-1 ul li:last-child
-{
-    border-bottom:none;
-}
-.nav-links ul li:hover .sub-menu-1 ul li a:hover
-{
-    color: rgb(60, 134, 64);
-}
-.search
-{
-    width: 250px;
-    float: left;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.srch
-{
-    font-family: 'Times New Roman';
-    width: 150px;
-    height: 40px;
-    background: white;
-    border: 1px solid black;
-    margin-top: 13px;
-    color: black;
-    border-right: none;
-    font-size: 16px;
-    float: left;
-    padding: 10px;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
-}
-.btn
-{
-    width: 100px;
-    height: 40px;
-    background: rgb(0,100,0);
-    border: 2px solid rgb(0,100,0);
-    margin-top: 13px;
-    color: white;
-    font-size: 15px;
-    border-bottom-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-.btn :focus
-{
-    outline: none;
-}
-.srch:focus
-{
-    outline: none;
-}
-/*topic*/
+/*Topic*/
 header{
-    top: 10%;
     width: 100vw;
     height: 100vh;
     background-image: url('pic/n1.jpg') ;
-    background-position: bottom;
+    background-position:bottom;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .header .content{
+   
     margin-bottom: 150px;
     color: whitesmoke;
     text-align: center;
@@ -377,7 +70,7 @@ header{
 
 }
 .william .quote{
-    margin-top: 5%;
+    margin-top: 8%;
     padding-left: 20px;
     font-family: 25px;
     letter-spacing: 1.2px;
@@ -418,23 +111,27 @@ section{
     flex-direction: column;
     align-items: center;
 }
-.row .col .pic1{
+.row .col .pic11{
     margin-top: 20px;
     width: 55%;
     height: 37%;
 }                   /*changing the image size*/
-.row .col .pic2{
+.row .col .pic22{
+    margin-top: 40px;
+    width: 50%;
+    height: 30%;
+}
+.row .col .pic33{
     margin-top: 40px;
     width: 60%;
-    height: 40%;
+    height: 10%;
 }
-
 .what .row{
     margin-top: 50px;
 }
 
 h2{
-    font-size: 3vmin;
+    font-size: 6vmin;
     color: #484848;
     margin: 30px auto;  /*Change the gap between pic and para */
 
@@ -490,115 +187,7 @@ p{
 }
 
 
-/*
-box css parts
-.c{
-    position:relative;
-    
-    width: 1200px;  /* if need, please change this px to the %  
-    height: 200px;
-    margin: 140px auto;
-    padding: 0%;
-}
-.c .box{
-    position: relative;
-    top: 220%;  /*change the box top position*/
-    /*width: calc(400px - 30px);     /* if need, please change this px to the
-    height: calc(300px - 30px);
-    background: rgb(240, 240, 233); /*color of the box background
-    float: left;
-    margin: 15px;
-    box-sizing: border-box;
-    overflow: hidden;
-    border-radius: 10px;
-}
-.c .box .icon{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #f00;  /*color of the icon
-    transition: 0.5s;
-    z-index: 1;
-}
 
-.c .box:hover .icon{
-    top: 20px;
-    left: calc(50% - 40px);
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-}
-.c .box .icon .fa{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    font-size: 80px;
-    transition: 0.5s;
-    color: #fff;
-}
-.c .box:hover .icon .fa{
-    font-size: 80px;
-}
-.c .box .content3{
-    position: absolute;
-    top: 100%;
-    height: calc(100% - 100px);
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-    transition: 0.5s;
-    opacity: 0;
-}
-.c .box:hover .content3{
-    top: 100px;
-    opacity: 1;
-}
-/*adding styles to the box header 
-.c .box .content3 h3{    
-    margin: 0;
-    padding: 0;
-    color: cyan;
-    font-size: 24px;
-}
-.c .box .content3 h3{    
-    margin: 0;
-    padding: 0;
-    color: cyan;
-    font-size: 24px;
-}
-.span1{
-    color: rgb(14, 158, 110);
-}
-.span2{
-    text-align: center;
-}
-
-/*adding styles to the box button
-.c .box .content3 .bb{
-    width: 140px;
-    height: 30px;
-    background: #2bab0d;
-    border: none;
-    margin-bottom: 100px;
-    margin-left: 20px;
-    font-size: 18px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .4s ease;
-    
-}
-.c .box .content3 .bb a{
-    text-decoration: none;
-    color: black;
-    transition: .3s ease;
-}
-.c .box .content3 .bb:hover{
-    background: yellowgreen;
-}
-*/
 
 .row .col .bb{
     width: 100px;
@@ -612,4 +201,10 @@ box css parts
     border-bottom-right-radius: 5px;
     outline: none;
     
+}
+
+.row .col .llb{
+     background-color: #033627;
+     color: white;
+     font-size: large;
 }
