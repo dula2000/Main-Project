@@ -42,7 +42,7 @@ header .card a, .vr-gallery a.btn {
   padding: 12px 0;
   color: #ffffff;
   font-family: "Montserrat-Bold";
-  margin-top: 20px;
+  margin-top: 0;
   border-radius: 0; }
   header .card a:hover, .vr-gallery a.btn:hover {
     background: #ffffff;
