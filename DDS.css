@@ -251,7 +251,18 @@ p{    /*This code relevant to the Strategic Mindset*/
      font-size: large;
 }
 
+.row_2 .col .ordered{
+   
+   text-align: left;
+    font-size: 1.2em;
+   color: #fc036b;
 
+}
+
+.row_2 .col .ordered .lbb{
+    font-size: 0.8em;
+    color: rgb(136, 47, 99);
+}
 
 
 /*Strategic Growth Mindset*/
