@@ -1,0 +1,94 @@
+body{
+    
+position: absolute;
+width: 100%;
+height: 800px;
+
+background: #E5E5E5;
+}
+
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.log{
+    position: relative;
+width: 390px;
+height: 500px;
+left: 0px;
+top: 0px;
+
+background: #FFFFFF;
+}
+.loginn
+{
+    position: relative;
+width: 350px;
+height: 81px;
+left: 65px;
+
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 56px;
+
+color: #050505;
+}
+.B{
+    position: relative;
+width: 352px;
+height: 51px;
+right: 0px;
+top: 0px;
+
+background: #E4E1E1;
+opacity: 0.5;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 15px;
+
+}
+.C
+{
+    position: relative;
+width: 352px;
+height: 51px;
+right: 0px;
+top: 0px;
+
+background: #E4E1E1;
+opacity: 0.5;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 15px;
+}
+.A{
+    position: relative;
+    width: 352px;
+    height: 51px;
+    right: 0px;
+    top: 0px;
+    
+    background: #00993D;
+    opacity: 0.5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.Sig{
+    position: relative;
+    width: 48px;
+    height: 16px;
+    left: 269px;
+    top: 579px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: capitalize;
+    
+    color: #00993D;
+
+}
