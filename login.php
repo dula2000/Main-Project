@@ -33,7 +33,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
             die;
            }
        // }
-    }
+       }
     }
         
 
@@ -50,21 +50,22 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
 <html>
     <head>
         <title> Login </title>
+        <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-<div id="box">
+<div class="log" id="box">
 
     <form method="post">
 
-    <div> Login </div> 
+    <div class="loginn"> Login </div> 
 
-        <input type="text" name="user_name"><br><br>
-        <input type="password" name="password"><br><br>
+        <input class="C" type="text" name="user_name"><br><br>
+        <input class="B" type="password" name="password"><br><br>
 
-        <input id="button" type="submit" value="Login"><br><br>
+        <input class="A" id="button" type="submit" value="Login"><br><br>
 
-        <a href="signup.php"> Signup </a>
+        <a class="Sig" href="signup.php"> Signup </a>
 
     </form>
 </div>
