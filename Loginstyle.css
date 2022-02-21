@@ -1,0 +1,39 @@
+.box{
+    background: #A29797;
+}
+
+
+
+.input{
+    position: absolute;
+width: 548px;
+height: 94px;
+left: 830px;
+top: 404px;
+
+background: #FBF6F6;
+border-radius: 50px;
+}
+
+.button{
+    position: absolute;
+width: 269px;
+height: 89px;
+left: 983px;
+top: 686px;
+
+background: #FFFCFC;
+border-radius: 50px;
+
+}
+.log
+{
+    position: absolute;
+width: 740.35px;
+height: 1027.33px;
+left: 0px;
+top: -0.46px;
+
+background: url(BusinessModpicture3.jpg);
+transform: rotate(-0.2deg);
+}
