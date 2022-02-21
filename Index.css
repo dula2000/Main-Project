@@ -14,7 +14,7 @@ body
 {
     min-height: 100vh;
     width: 100%;
-    background-image:linear-gradient(rgba(170, 235, 178, 0.7),rgba(171, 240, 186, 0.7)),url(file:///C:/Users/HP/Downloads/r1.jpg);
+    background-image:linear-gradient(rgba(170, 235, 178, 0.7),rgba(171, 240, 186, 0.7)),url(r1.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -543,7 +543,7 @@ body
     {
         margin: 100px auto;
         width: 80%;
-        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(file:///C:/Users/HP/Downloads/office2.jpg);
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(office2.jpg);
         background-position: center;
         background-size: cover;
         border-radius: 10px;
@@ -622,7 +622,7 @@ body
     {
         height: 50vh;
         width: 100%;
-        background-image: linear-gradient(rgba(170, 235, 178, 0.7),rgba(171, 240, 186, 0.7)),url(file:///C:/Users/HP/Downloads/bgi2.jpg);
+        background-image: linear-gradient(rgba(170, 235, 178, 0.7),rgba(171, 240, 186, 0.7)),url(bgi2.jpg);
         background-position: center;
         background-size: cover;
         text-align: center;
@@ -636,7 +636,7 @@ body
     {
         width: 80%;
         margin: auto;
-        padding-top: 80px;
+        padding-top: 50px;
         padding-bottom: 50px;
     }
     .about-col
@@ -654,6 +654,13 @@ body
         font-weight: 600;
         padding-top: 0;
     }
+    .about-col h2
+    {
+        font-size: 25px;
+        font-weight: 600;
+        margin-top: 30px;
+        padding-top: 0;
+    }
     .about-col p
     {
         padding: 15px 0 25px;
@@ -662,6 +669,7 @@ body
         font-weight: 300;
         line-height: 22px;
     }
+    .about-col para1
     .green-btn
     {
         border: 1px solid rgb(0, 100, 0);
