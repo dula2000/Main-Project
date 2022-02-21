@@ -110,6 +110,16 @@ p{
     padding: 1.5em;
 }
 
+.card .img12{
+    height: 550px;
+    width: 100%;
+}
+.card .img123{
+    height: 450px;
+    width: 75%;
+    align-items: center;
+}
+
 /*section c*/
 
 #section-c{
