@@ -41,7 +41,7 @@ body
     font-size: 40px;
     float: left;
     animation: movedown 1s linear 1;
-    animation-delay: 1s;
+    animation-delay: 0.5s;
     animation-fill-mode: forwards;
     visibility: hidden;
 }
@@ -63,7 +63,7 @@ body
     flex: 1;
     text-align: right;
     animation: movedown 1s linear 1;
-    animation-delay: 2s;
+    animation-delay: 1s;
     visibility: hidden;
     animation-fill-mode: forwards;
 }
@@ -156,7 +156,7 @@ body
     position: relative;
     text-align: center;
     animation: moveright 1s linear 1;
-    animation-delay: 3s;
+    animation-delay: 1.5s;
     visibility: hidden;
     animation-fill-mode: forwards;
 }
@@ -647,12 +647,43 @@ body
     .about-col img
     {
         width: 100%;
+        animation: moveleft 1s linear 1;
+        animation-delay: 2.5s;
+        visibility: hidden;
+        animation-fill-mode: forwards;
+    }
+    @keyframes moveleft
+    {
+        0%{
+            transform: translateX(100px);
+            visibility: visible;
+        }
+        100%{
+            transform: translateX(0);
+            visibility: visible;
+        }
     }
     .about-col h1
     {
         font-size: 36px;
         font-weight: 600;
         padding-top: 0;
+        animation: zooming 1s linear 1;
+        animation-delay: 2s;
+        visibility: hidden;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes zooming
+    {
+        0%{
+            transform: scale(0.5);
+            visibility: visible;
+        }
+        100%{
+            transform: scale(1);
+            visibility: visible;
+        }
     }
     .about-col h2
     {
@@ -660,6 +691,7 @@ body
         font-weight: 600;
         margin-top: 30px;
         padding-top: 0;
+        color: rgb(0, 100, 0);
     }
     .about-col p
     {
@@ -669,12 +701,44 @@ body
         font-weight: 300;
         line-height: 22px;
     }
-    .about-col para1
+    .about-col .para1 h2
+    {
+        animation: moveright 1s linear 1;
+        animation-delay: 2.5s;
+        visibility: hidden;
+        animation-fill-mode: forwards;
+    }
+    .about-col .para1 p
+    {
+        animation: zooming 1s linear 1;
+        animation-delay: 3s;
+        visibility: hidden;
+        animation-fill-mode: forwards;
+    }
+    .about-col .para2 h2
+    {
+        animation: moveright 1s linear 1;
+        animation-delay: 3.5s;
+        visibility: hidden;
+        animation-fill-mode: forwards;
+    }
+    .about-col .para2 p
+    {
+        animation: zooming 1s linear 1;
+        animation-delay: 4s;
+        visibility: hidden;
+        animation-fill-mode: forwards;
+    }
+    
     .green-btn
     {
         border: 1px solid rgb(0, 100, 0);
         background: transparent;
         color: rgb(0, 100, 0);
+        animation: zooming 1s linear 1;
+        animation-delay: 4.5s;
+        visibility: hidden;
+        animation-fill-mode: forwards;
     }
     .green-btn:hover
     {
