@@ -17,6 +17,8 @@ body
     background-image:linear-gradient(rgba(170, 235, 178, 0.7),rgba(171, 240, 186, 0.7)),url(file:///C:/Users/HP/Downloads/r1.jpg);
     background-size: cover;
     background-position: center;
+    position: relative;
+    overflow: hidden;
 }
 .Menu-bar
 {
@@ -38,11 +40,32 @@ body
     font-family: 'Times New Roman';
     font-size: 40px;
     float: left;
+    animation: movedown 1s linear 1;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
 }
+
+@keyframes movedown
+{
+    0%{
+        transform: translateY(-100px);
+        visibility: visible;
+    }
+    100%{
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
+
 .nav-links
 {
     flex: 1;
     text-align: right;
+    animation: movedown 1s linear 1;
+    animation-delay: 2s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
 }
 .nav-links ul
 {
@@ -132,6 +155,22 @@ body
     color: black;
     position: relative;
     text-align: center;
+    animation: moveright 1s linear 1;
+    animation-delay: 3s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveright
+{
+    0%{
+        transform: translateX(-100px);
+        visibility: visible;
+    }
+    100%{
+        transform: translateX(0);
+        visibility: visible;
+    }
 }
 .content .par
 {
