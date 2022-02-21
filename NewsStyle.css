@@ -49,7 +49,7 @@ header .card a, .vr-gallery a.btn {
     color: #03133a; }
 
     header {
-      background-color: rgba(170, 235, 178, 0.7);
+      background-color: rgba(117, 238, 143, 0.7);
       text-align: center;
       padding: 20px 0;
       padding-bottom: 50px; }
@@ -58,9 +58,9 @@ header .card a, .vr-gallery a.btn {
       header .input-group input {
         display: none; }
       header h2.logo {
-        font-size: 75px;
+        font-size: 40px;
         font-family: "Angeline_Vintage";
-        color: #ffffff; }
+        color: rgb(0, 100, 0);; }
       header .nav-fill {
         max-width: 250px; }
         header .nav-fill a {
