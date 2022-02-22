@@ -383,11 +383,15 @@ body
         text-align: center;
         border-radius: 20px;
         bottom: 0;
-        left: 50%;
+        left: 30%;
         transform: translateX(-50%);
         position: absolute;
         opacity: 0;
         transition: 0.5s;
+        animation: zooming 1s linear 1;
+        animation-delay: 1s;
+        visibility: hidden;
+        animation-fill-mode: forwards;
     }
     .layer:hover .green-btn
     {
@@ -630,7 +634,12 @@ body
     }
     .sub-header h1
     {
-        margin-top: 100px;
+        margin-top: 150px;
+        font-size: 30px;
+        animation: movedown 1s linear 1;
+        animation-delay: 1s;
+        visibility: hidden;
+        animation-fill-mode: forwards;
     }
     .about
     {
