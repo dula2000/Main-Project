@@ -78,6 +78,10 @@ p{
 #showcase .content-wrap,
 #showcase-a .content-wrap {
     padding: 0 1.5em;
+
+}
+#showcase .content-wrap p{
+    background-color:rgb(212, 236, 212);
 }
 
 /*Section A*/
@@ -118,6 +122,31 @@ p{
     height: 450px;
     width: 75%;
     align-items: center;
+}
+.card .card-title{
+ color: rgb(76, 121, 10);
+ background-color: azure;
+    
+}
+.card .p1{
+    color: rgb(77, 27, 143);
+    background-color: aliceblue;
+}
+.card .p2{
+    color: rgb(117, 65, 2);
+    background-color: aliceblue;
+}
+.card .p3{
+    color: rgb(122, 24, 29);
+    background-color: aliceblue;
+}
+.card .p4{
+    color: darkgreen;
+    background-color: aliceblue;
+}
+.card .p5{
+    color: rgb(10, 59, 59);
+    background-color: aliceblue;
 }
 
 /*section c*/
