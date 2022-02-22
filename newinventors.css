@@ -119,6 +119,26 @@ p{
     width: 75%;
     align-items: center;
 }
+.card .card-title{
+ color: rgb(76, 121, 10);
+ background-color: azure;
+    
+}
+.card .p1{
+    color: rgb(77, 27, 143);
+}
+.card .p2{
+    color: rgb(117, 65, 2);
+}
+.card .p3{
+    color: rgb(122, 24, 29);
+}
+.card .p4{
+    color: darkgreen;
+}
+.card .p5{
+    color: rgb(10, 59, 59);
+}
 
 /*section c*/
 
