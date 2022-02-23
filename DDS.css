@@ -404,9 +404,9 @@ h1{
  {
      width: 100%;
      position: absolute;
-     bottom: -3000px;
+     bottom: -5000px;
      margin-bottom: 2725px;
-     top: 2600px;
+    
      background: linear-gradient(to right, #00093c,#2d0b00);
      color: white;
      padding: 50px 0 20px;
@@ -632,15 +632,14 @@ h1{
 
 
 
-
- /*----footer for innovationcreativity-----*/
- .f1
+ /*----footer---Innovation Creeativity--*/
+ section-f
  {
      width: 100%;
      position: absolute;
      bottom: -5000px;
-     margin-bottom: 2000px;
-     top: 6100px;
+     margin-bottom: -750px;
+    
      background: linear-gradient(to right, #00093c,#2d0b00);
      color: white;
      padding: 50px 0 20px;
@@ -649,7 +648,7 @@ h1{
      line-height: 20px;
  }
 
- .f1 .row1
+ .row1
  {
      width: 85%;
      margin: auto;
@@ -659,7 +658,7 @@ h1{
      justify-content: space-between;
  }
 
- .f1 .footer_col
+ .footer_col
  {
      flex-basis: 25%;
      padding: 10px;
