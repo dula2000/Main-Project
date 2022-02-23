@@ -599,14 +599,14 @@ body
     }
 
     /*----footer-----*/
-    footer
+    .footer
     {
         width: 100%;
         position: absolute;
-        bottom: -5000px;
-        background: linear-gradient(to right, #00093c,#2d0b00);
+        text-align: center;
+        background: linear-gradient(to right, #035503,#2d0b00);
         color: white;
-        padding: 50px 0 20px;
+        padding: 70px 0 ;
         border-top-left-radius: 125px;
         font-size: 13px;
         line-height: 20px;
@@ -636,7 +636,7 @@ body
     {
         width: 80px;
         margin-bottom: 30px;
-        color: rgb(0, 100, 0);
+        color: rgb(245, 247, 245);
     }
 
     .footer_col h3
