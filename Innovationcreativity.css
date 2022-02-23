@@ -7,7 +7,7 @@
     font-family: sans-serif;
 
 }
-/*
+
 
 body,html{
     overflow-x: hidden;
@@ -15,7 +15,7 @@ body,html{
     background-position: center;
 }
 
-/*Topic
+/*Topic*/
 header{
     width: 100vw;
     height: 100vh;
@@ -57,7 +57,7 @@ header{
 
 }
 
-/*Adding the quote
+/*Adding the quote*/
 .william {
     width: 1200px;
     height: auto;
@@ -65,7 +65,7 @@ header{
     color: black;
     position:absolute;
     text-align: left;
-    top: 10%;    /*changing the quote top position
+    top: 10%;    /*changing the quote top position*/
     margin-bottom: 10px;
 
 }
@@ -80,11 +80,11 @@ header{
     padding-top: 25px ;
     text-align: center;
 }
-/*What is Innovation
+/*What is Innovation*/
 
 section{
-   width: 80
-   margin:  80px auto;  /*Cjange the whole section top position
+   width: 80%;
+   margin:  80px auto;  /*Cjange the whole section top position*/
 }
 
 .title{
@@ -97,7 +97,7 @@ section{
     color:rgb(206, 128, 27) ;
 }
 .row{
-    display: inline-block;  /*paragraph position type
+    display: inline-block;  /*paragraph position type*/ 
     
     align-items: center;
     width: 100%;
@@ -107,7 +107,7 @@ section{
 }
 .row .col{
     display: flex;
-    margin-top: 50px;  /*Changing the paragraph top possition
+    margin-top: 50px;  /*Changing the paragraph top possition*/
     flex-direction: column;
     align-items: center;
 }
@@ -115,7 +115,7 @@ section{
     margin-top: 20px;
     width: 55%;
     height: 37%;
-}                   /*changing the image size
+}                   /*changing the image size*/
 .row .col .pic22{
     margin-top: 40px;
     width: 50%;
@@ -133,21 +133,21 @@ section{
 h2{
     font-size: 6vmin;
     color: #484848;
-    margin: 30px auto;  /*Change the gap between pic and para 
+    margin: 30px auto;  /*Change the gap between pic and para */
 
 }
 
 p{
     color: rgb(12, 14, 13);
     padding: 0px 40px;
-    margin-bottom: 20px;  /*Change the Button gap
+    margin-bottom: 20px;  /*Change the Button gap*/
 }
 
 .what .ctn{
     margin-top: 30px;
 }
 
-/*mobile version
+/*mobile version*/
 @media only screen and (max-width:850px){
     .Menu-bar{
         padding: 0;
@@ -208,5 +208,3 @@ p{
      color: white;
      font-size: large;
 }
-*/
-
