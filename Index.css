@@ -603,7 +603,6 @@ body
     {
         width: 100%;
         position: absolute;
-        bottom: -5000px;
         background: linear-gradient(to right, #00093c,#2d0b00);
         color: white;
         padding: 50px 0 20px;
