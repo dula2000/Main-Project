@@ -640,7 +640,7 @@ h1{
      height: 410px;
      position: absolute;
      bottom: -5000px;
-     margin-bottom: 2000px;
+     margin-bottom: -800px;
      top: 6100px;
      background: linear-gradient(to right, #00093c,#2d0b00);
      color: white;
