@@ -236,7 +236,7 @@ body
         display: block;
     }
     .nav-links{
-        position: absolute;
+        position: fixed;
         background: rgb(0,100,0);
         color: white;
         height: 100vh;
@@ -1011,16 +1011,16 @@ body
         color: #555;
         font-weight: 400;
     }
-    .contact-col input, .contact-col textarea
+
+   .contact-col input, .contact-col textarea
     {
         width: 100%;
         padding: 15px;
         margin-bottom: 17px;
         outline: none;
         border: 1px solid #ccc;
-        box-sizing: border-box;
     }
-
+    
     /*------Design thinking page-------*/
     .design-h
     {
