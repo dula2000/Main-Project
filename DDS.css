@@ -313,10 +313,13 @@ h2{
 }
 
 p{
-    color: rgb(18, 90, 54);
-    padding: 0px 40px;
+    color: rgb(226, 241, 235);
+    padding: 0px 0px;
     margin-bottom: 20px;  /*Change the Button gap*/
     align-items: center;
+}
+.p1{
+    color: #2bab0d;
 }
 
 .row-1 .col-1 .cn{
@@ -343,7 +346,7 @@ p{
 }
 
 .card{
-    background: white;
+    background: rgb(121, 190, 230);
     width: 300px;
     height: 590px;
     margin: 10px;
@@ -376,7 +379,7 @@ p{
 
 .card a{
     background-color: black;
-    color: aliceblue;
+    color: rgb(214, 224, 233);
     padding: 15px 20px;
     display: block;
     text-align: center;
@@ -404,9 +407,9 @@ h1{
  {
      width: 100%;
      position: absolute;
-     bottom: -3000px;
+    
      margin-bottom: 2725px;
-     top: 2600px;
+    
      background: linear-gradient(to right, #00093c,#2d0b00);
      color: white;
      padding: 50px 0 20px;
@@ -415,7 +418,7 @@ h1{
      line-height: 20px;
  }
 
- .row1
+ .row2
  {
      width: 85%;
      margin: auto;
@@ -425,13 +428,13 @@ h1{
      justify-content: space-between;
  }
 
- .footer_col
+ .footer_col1
  {
      flex-basis: 25%;
      padding: 10px;
  }
 
- .footer_col:nth-child(2), .footer_col:nth-child(3)
+ .footer_col1:nth-child(2), .footer_col1:nth-child(3)
  {
      flex-basis: 15%;
  }
@@ -442,7 +445,7 @@ h1{
      color: rgb(0, 100, 0);
  }
 
- .footer_col h3
+ .footer_col1 h3
  {
      width: fit-content;
      margin-bottom: 40px;
@@ -640,7 +643,7 @@ h1{
      height: 410px;
      position: absolute;
      bottom: -5000px;
-     margin-bottom: 2000px;
+     margin-bottom: -800px;
      top: 6100px;
      background: linear-gradient(to right, #00093c,#2d0b00);
      color: white;
@@ -674,7 +677,7 @@ h1{
  {
      width: 80px;
      margin-bottom: 30px;
-     color: rgb(0, 100, 0);
+     color: rgb(214, 224, 214);
  }
 
  .footer_col h3
